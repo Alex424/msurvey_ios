@@ -1,0 +1,1670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		520264D71FB2045B005FAABC /* MADWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520264D51FB2045B005FAABC /* MADWaitingView.m */; };
+		520264D81FB2045B005FAABC /* MADWaitingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520264D61FB2045B005FAABC /* MADWaitingView.xib */; };
+		520264DC1FB20FA4005FAABC /* MADWarningAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 520264DA1FB20FA4005FAABC /* MADWarningAlert.m */; };
+		520264DD1FB20FA4005FAABC /* MADWarningAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520264DB1FB20FA4005FAABC /* MADWarningAlert.xib */; };
+		520DBE3A1EDE62EB0012C019 /* NewSurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520DBE391EDE62EB0012C019 /* NewSurveyViewController.m */; };
+		521885731EE6F97300C1DFD0 /* CarDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521885721EE6F97300C1DFD0 /* CarDescriptionViewController.m */; };
+		521885761EE6F98700C1DFD0 /* CarLicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521885751EE6F98700C1DFD0 /* CarLicenseViewController.m */; };
+		521885791EE6F9C400C1DFD0 /* CarTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521885781EE6F9C400C1DFD0 /* CarTypeViewController.m */; };
+		5218857C1EE6F9E000C1DFD0 /* CarBackdoorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5218857B1EE6F9E000C1DFD0 /* CarBackdoorViewController.m */; };
+		5218857F1EE6FA0100C1DFD0 /* CarDoorCoincidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5218857E1EE6FA0100C1DFD0 /* CarDoorCoincidingViewController.m */; };
+		521885821EE6FA1600C1DFD0 /* CarPushButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521885811EE6FA1600C1DFD0 /* CarPushButtonsViewController.m */; };
+		521885851EE6FA2D00C1DFD0 /* CarDoorMeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521885841EE6FA2D00C1DFD0 /* CarDoorMeasurementsViewController.m */; };
+		521885881EE6FA4000C1DFD0 /* CarHandrailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521885871EE6FA4000C1DFD0 /* CarHandrailViewController.m */; };
+		5218858B1EE6FA5A00C1DFD0 /* CarMeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5218858A1EE6FA5A00C1DFD0 /* CarMeasurementsViewController.m */; };
+		5218858E1EE6FA7100C1DFD0 /* CarNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5218858D1EE6FA7100C1DFD0 /* CarNotesViewController.m */; };
+		521885911EE6FA8400C1DFD0 /* CarPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521885901EE6FA8400C1DFD0 /* CarPhotosViewController.m */; };
+		521B69F91ED850460059DCBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 521B69F81ED850460059DCBC /* main.m */; };
+		521B69FC1ED850460059DCBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 521B69FB1ED850460059DCBC /* AppDelegate.m */; };
+		521B69FF1ED850460059DCBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521B69FE1ED850460059DCBC /* ViewController.m */; };
+		521B6A021ED850460059DCBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521B6A001ED850460059DCBC /* Main.storyboard */; };
+		521B6A051ED850460059DCBC /* MADSurvey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 521B6A031ED850460059DCBC /* MADSurvey.xcdatamodeld */; };
+		521B6A071ED850460059DCBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521B6A061ED850460059DCBC /* Assets.xcassets */; };
+		521B6A0A1ED850460059DCBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521B6A081ED850460059DCBC /* LaunchScreen.storyboard */; };
+		52450D171F2957B700DBA408 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 52450D161F2957B700DBA408 /* Settings.m */; };
+		524C0FB81F1B64B40016D0E5 /* Cop+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0F8D1F1B64B30016D0E5 /* Cop+CoreDataClass.m */; };
+		524C0FB91F1B64B40016D0E5 /* Cop+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0F8F1F1B64B30016D0E5 /* Cop+CoreDataProperties.m */; };
+		524C0FBA1F1B64B40016D0E5 /* InteriorCarDoor+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0F911F1B64B30016D0E5 /* InteriorCarDoor+CoreDataClass.m */; };
+		524C0FBB1F1B64B40016D0E5 /* InteriorCarDoor+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0F931F1B64B30016D0E5 /* InteriorCarDoor+CoreDataProperties.m */; };
+		524C0FBC1F1B64B40016D0E5 /* Lantern+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0F951F1B64B30016D0E5 /* Lantern+CoreDataClass.m */; };
+		524C0FBD1F1B64B40016D0E5 /* Lantern+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0F971F1B64B30016D0E5 /* Lantern+CoreDataProperties.m */; };
+		524C0FBE1F1B64B40016D0E5 /* Lobby+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0F991F1B64B30016D0E5 /* Lobby+CoreDataClass.m */; };
+		524C0FBF1F1B64B40016D0E5 /* Lobby+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0F9B1F1B64B30016D0E5 /* Lobby+CoreDataProperties.m */; };
+		524C0FC01F1B64B40016D0E5 /* HallStation+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0F9D1F1B64B40016D0E5 /* HallStation+CoreDataClass.m */; };
+		524C0FC11F1B64B40016D0E5 /* HallStation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0F9F1F1B64B40016D0E5 /* HallStation+CoreDataProperties.m */; };
+		524C0FC21F1B64B40016D0E5 /* Photo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0FA11F1B64B40016D0E5 /* Photo+CoreDataClass.m */; };
+		524C0FC31F1B64B40016D0E5 /* Photo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0FA31F1B64B40016D0E5 /* Photo+CoreDataProperties.m */; };
+		524C0FC41F1B64B50016D0E5 /* Project+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0FA51F1B64B40016D0E5 /* Project+CoreDataClass.m */; };
+		524C0FC51F1B64B50016D0E5 /* Project+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0FA71F1B64B40016D0E5 /* Project+CoreDataProperties.m */; };
+		524C0FC61F1B64B50016D0E5 /* Bank+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0FA91F1B64B40016D0E5 /* Bank+CoreDataClass.m */; };
+		524C0FC71F1B64B50016D0E5 /* Bank+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0FAB1F1B64B40016D0E5 /* Bank+CoreDataProperties.m */; };
+		524C0FC81F1B64B50016D0E5 /* HallEntrance+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0FAD1F1B64B40016D0E5 /* HallEntrance+CoreDataClass.m */; };
+		524C0FC91F1B64B50016D0E5 /* HallEntrance+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0FAF1F1B64B40016D0E5 /* HallEntrance+CoreDataProperties.m */; };
+		524C0FCA1F1B64B50016D0E5 /* Car+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0FB11F1B64B40016D0E5 /* Car+CoreDataClass.m */; };
+		524C0FCB1F1B64B50016D0E5 /* Car+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0FB31F1B64B40016D0E5 /* Car+CoreDataProperties.m */; };
+		524C0FCC1F1B64B50016D0E5 /* InteriorCar+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0FB51F1B64B40016D0E5 /* InteriorCar+CoreDataClass.m */; };
+		524C0FCD1F1B64B50016D0E5 /* InteriorCar+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C0FB71F1B64B40016D0E5 /* InteriorCar+CoreDataProperties.m */; };
+		524E498B1EE6E99900E6769A /* HallStationPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524E498A1EE6E99900E6769A /* HallStationPhotosViewController.m */; };
+		524E498E1EE6EBB900E6769A /* LanternPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524E498D1EE6EBB900E6769A /* LanternPhotosViewController.m */; };
+		525161DC1FA8126D00C55D0C /* StopSurveyConfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 525161DA1FA8126D00C55D0C /* StopSurveyConfirmView.m */; };
+		525161DD1FA8126D00C55D0C /* StopSurveyConfirmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525161DB1FA8126D00C55D0C /* StopSurveyConfirmView.xib */; };
+		526393771FB0E3030028825D /* SubmitConfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 526393751FB0E3030028825D /* SubmitConfirmView.m */; };
+		526393781FB0E3030028825D /* SubmitConfirmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526393761FB0E3030028825D /* SubmitConfirmView.xib */; };
+		526E28311F0F9F3700A8FD8B /* InteriorCarCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526E28301F0F9F3700A8FD8B /* InteriorCarCountViewController.m */; };
+		5274E3891F0643D700B6867B /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5274E3881F0643D700B6867B /* DataManager.m */; };
+		5274E4311F07C02300B6867B /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 5274E4301F07C02300B6867B /* Common.m */; };
+		5278D07A1FADE2AD00998BBA /* ProjectEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5278D0791FADE2AD00998BBA /* ProjectEditViewController.m */; };
+		5279D9B31EE159C600456C85 /* ProjectPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279D9B21EE159C600456C85 /* ProjectPhotosViewController.m */; };
+		5279D9C31EE15AC700456C85 /* ProjectItemsToSurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279D9B71EE15AC700456C85 /* ProjectItemsToSurveyViewController.m */; };
+		5279D9C41EE15AC700456C85 /* ProjectJpbTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279D9B91EE15AC700456C85 /* ProjectJpbTypeViewController.m */; };
+		5279D9C51EE15AC700456C85 /* ProjectNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279D9BB1EE15AC700456C85 /* ProjectNotesViewController.m */; };
+		5279D9C61EE15AC700456C85 /* ProjectNumberBanksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279D9BD1EE15AC700456C85 /* ProjectNumberBanksViewController.m */; };
+		5279D9C71EE15AC700456C85 /* ProjectNumberFloorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279D9BF1EE15AC700456C85 /* ProjectNumberFloorsViewController.m */; };
+		5279D9C81EE15AC700456C85 /* ProjectNumberLobbyPanelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279D9C11EE15AC700456C85 /* ProjectNumberLobbyPanelsViewController.m */; };
+		5279D9CB1EE15B2900456C85 /* CheckButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279D9CA1EE15B2900456C85 /* CheckButton.m */; };
+		5279D9CE1EE170B400456C85 /* PhotoSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279D9CD1EE170B400456C85 /* PhotoSelectView.m */; };
+		5279D9D01EE170C400456C85 /* PhotoSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5279D9CF1EE170C400456C85 /* PhotoSelectView.xib */; };
+		5280AB711FCA99F9004605BA /* InteriorCarCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5280AB701FCA99F9004605BA /* InteriorCarCopyViewController.m */; };
+		5280AB741FCAA21A004605BA /* InteriorCarExistingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5280AB731FCAA21A004605BA /* InteriorCarExistingListViewController.m */; };
+		5280AB771FCAB3DE004605BA /* InteriorCarWallTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5280AB761FCAB3DE004605BA /* InteriorCarWallTypeViewController.m */; };
+		5280AB871FCACE42004605BA /* InteriorCarLTransomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5280AB861FCACE42004605BA /* InteriorCarLTransomViewController.m */; };
+		5280AB8A1FCACE57004605BA /* InteriorCarHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5280AB891FCACE57004605BA /* InteriorCarHeaderViewController.m */; };
+		5280AB8D1FCACE79004605BA /* InteriorCarFlatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5280AB8C1FCACE79004605BA /* InteriorCarFlatViewController.m */; };
+		5280AB971FCB45D1004605BA /* HallEntranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5280AB961FCB45D1004605BA /* HallEntranceViewController.m */; };
+		5280AB9A1FCB4B5D004605BA /* HallEntranceExistingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5280AB991FCB4B5D004605BA /* HallEntranceExistingListViewController.m */; };
+		5281396A1EE6D6C900A1B7F8 /* LanternSameAsMeasurementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528139691EE6D6C900A1B7F8 /* LanternSameAsMeasurementViewController.m */; };
+		5281396D1EE6D6D900A1B7F8 /* LanternReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281396C1EE6D6D900A1B7F8 /* LanternReviewViewController.m */; };
+		528139701EE6D6F100A1B7F8 /* LanternDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281396F1EE6D6F100A1B7F8 /* LanternDescriptionViewController.m */; };
+		528139731EE6D6FC00A1B7F8 /* LanternMountingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528139721EE6D6FC00A1B7F8 /* LanternMountingViewController.m */; };
+		528139761EE6D70900A1B7F8 /* LanternWallMaterialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528139751EE6D70900A1B7F8 /* LanternWallMaterialViewController.m */; };
+		528139791EE6D72400A1B7F8 /* LanternMeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528139781EE6D72400A1B7F8 /* LanternMeasurementsViewController.m */; };
+		5281397C1EE6D73600A1B7F8 /* LanternNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281397B1EE6D73600A1B7F8 /* LanternNotesViewController.m */; };
+		5296F0C81EDC459D00599688 /* MADMotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5296F0C71EDC459D00599688 /* MADMotherViewController.m */; };
+		5297B95B1EE40CFB00255FE4 /* HallStationSameAsMeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5297B95A1EE40CFB00255FE4 /* HallStationSameAsMeasurementsViewController.m */; };
+		5297B95E1EE4145800255FE4 /* HallStationReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5297B95D1EE4145800255FE4 /* HallStationReviewViewController.m */; };
+		52AB43AF1EE84DBE00E6F4F8 /* BankNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43341EE84DBE00E6F4F8 /* BankNameViewController.m */; };
+		52AB43B01EE84DBE00E6F4F8 /* BankNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43361EE84DBE00E6F4F8 /* BankNotesViewController.m */; };
+		52AB43B11EE84DBE00E6F4F8 /* BankNumberCarsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43381EE84DBE00E6F4F8 /* BankNumberCarsViewController.m */; };
+		52AB43B21EE84DBE00E6F4F8 /* BankNumberRisersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB433A1EE84DBE00E6F4F8 /* BankNumberRisersViewController.m */; };
+		52AB43B31EE84DBE00E6F4F8 /* BankPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB433C1EE84DBE00E6F4F8 /* BankPhotosViewController.m */; };
+		52AB43B41EE84DBE00E6F4F8 /* FinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB433F1EE84DBE00E6F4F8 /* FinalViewController.m */; };
+		52AB43B51EE84DBE00E6F4F8 /* HallEntranceDoorTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43411EE84DBE00E6F4F8 /* HallEntranceDoorTypeViewController.m */; };
+		52AB43B61EE84DBE00E6F4F8 /* HallEntrancePhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43431EE84DBE00E6F4F8 /* HallEntrancePhotosViewController.m */; };
+		52AB43B71EE84DBE00E6F4F8 /* HallInstranceTransomMeasurement1sViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43451EE84DBE00E6F4F8 /* HallInstranceTransomMeasurement1sViewController.m */; };
+		52AB43B81EE84DBE00E6F4F8 /* HallInstranceTransomMeasurementCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43471EE84DBE00E6F4F8 /* HallInstranceTransomMeasurementCenterViewController.m */; };
+		52AB43B91EE84DBE00E6F4F8 /* HallInstranseTransomMeasurement2sViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43491EE84DBE00E6F4F8 /* HallInstranseTransomMeasurement2sViewController.m */; };
+		52AB43BA1EE84DBE00E6F4F8 /* HallIntranceDoorOpeningDirectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB434B1EE84DBE00E6F4F8 /* HallIntranceDoorOpeningDirectionViewController.m */; };
+		52AB43BB1EE84DBE00E6F4F8 /* HallIntranceFrontReturnMeasurementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB434D1EE84DBE00E6F4F8 /* HallIntranceFrontReturnMeasurementViewController.m */; };
+		52AB43BC1EE84DBE00E6F4F8 /* HallIntranceNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB434F1EE84DBE00E6F4F8 /* HallIntranceNotesViewController.m */; };
+		52AB43BD1EE84DBE00E6F4F8 /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43511EE84DBE00E6F4F8 /* ReviewViewController.m */; };
+		52AB43BE1EE84DBE00E6F4F8 /* InteriorCarBackDoorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43541EE84DBE00E6F4F8 /* InteriorCarBackDoorViewController.m */; };
+		52AB43BF1EE84DBE00E6F4F8 /* InteriorCarCeilingEscapeHatchLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43561EE84DBE00E6F4F8 /* InteriorCarCeilingEscapeHatchLocationViewController.m */; };
+		52AB43C01EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43581EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanLocationViewController.m */; };
+		52AB43C11EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB435A1EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanViewController.m */; };
+		52AB43C21EE84DBE00E6F4F8 /* InteriorCarCeilingFrameTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB435C1EE84DBE00E6F4F8 /* InteriorCarCeilingFrameTypeViewController.m */; };
+		52AB43C31EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB435E1EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsAViewController.m */; };
+		52AB43C41EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43601EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsBViewController.m */; };
+		52AB43C51EE84DBE00E6F4F8 /* InteriorCarDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43621EE84DBE00E6F4F8 /* InteriorCarDescriptionViewController.m */; };
+		52AB43C61EE84DBE00E6F4F8 /* InteriorCarFloorHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43641EE84DBE00E6F4F8 /* InteriorCarFloorHeightViewController.m */; };
+		52AB43C71EE84DBE00E6F4F8 /* InteriorCarFlooringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43661EE84DBE00E6F4F8 /* InteriorCarFlooringViewController.m */; };
+		52AB43C81EE84DBE00E6F4F8 /* InteriorCarFrontReturnMeasurementsOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43681EE84DBE00E6F4F8 /* InteriorCarFrontReturnMeasurementsOtherViewController.m */; };
+		52AB43C91EE84DBE00E6F4F8 /* InteriorCarFrontReturnTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB436A1EE84DBE00E6F4F8 /* InteriorCarFrontReturnTypeViewController.m */; };
+		52AB43CA1EE84DBE00E6F4F8 /* InteriorCarLicenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB436C1EE84DBE00E6F4F8 /* InteriorCarLicenceViewController.m */; };
+		52AB43CB1EE84DBE00E6F4F8 /* InteriorCarMeasurementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB436E1EE84DBE00E6F4F8 /* InteriorCarMeasurementViewController.m */; };
+		52AB43CC1EE84DBE00E6F4F8 /* InteriorCarOpeningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43701EE84DBE00E6F4F8 /* InteriorCarOpeningViewController.m */; };
+		52AB43CD1EE84DBE00E6F4F8 /* InteriorCarSignleSideMeasurementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43721EE84DBE00E6F4F8 /* InteriorCarSignleSideMeasurementViewController.m */; };
+		52AB43CE1EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43741EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsAViewController.m */; };
+		52AB43CF1EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43761EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsBViewController.m */; };
+		52AB43D01EE84DBE00E6F4F8 /* InteriorCarSlamPostOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43781EE84DBE00E6F4F8 /* InteriorCarSlamPostOtherViewController.m */; };
+		52AB43D11EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB437A1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeAViewController.m */; };
+		52AB43D21EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB437C1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeBViewController.m */; };
+		52AB43D31EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB437E1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeCViewController.m */; };
+		52AB43D41EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43801EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeViewController.m */; };
+		52AB43D51EE84DBE00E6F4F8 /* InteriorCarStructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43821EE84DBE00E6F4F8 /* InteriorCarStructureViewController.m */; };
+		52AB43D61EE84DBE00E6F4F8 /* InteriorCarTillerCoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43841EE84DBE00E6F4F8 /* InteriorCarTillerCoverViewController.m */; };
+		52AB43D71EE84DBE00E6F4F8 /* InteriorCarTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43861EE84DBE00E6F4F8 /* InteriorCarTypeViewController.m */; };
+		52AB43D81EE84DBE00E6F4F8 /* InteriorCarAuxCopReturnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43891EE84DBE00E6F4F8 /* InteriorCarAuxCopReturnViewController.m */; };
+		52AB43D91EE84DBE00E6F4F8 /* InteriorCarBackWallCloneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB438B1EE84DBE00E6F4F8 /* InteriorCarBackWallCloneViewController.m */; };
+		52AB43DA1EE84DBE00E6F4F8 /* InteriorCarBackWallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB438D1EE84DBE00E6F4F8 /* InteriorCarBackWallViewController.m */; };
+		52AB43DB1EE84DBE00E6F4F8 /* InteriorCarCopInstalledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB438F1EE84DBE00E6F4F8 /* InteriorCarCopInstalledViewController.m */; };
+		52AB43DC1EE84DBE00E6F4F8 /* InteriorCarDoorOpeningDirectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43911EE84DBE00E6F4F8 /* InteriorCarDoorOpeningDirectionViewController.m */; };
+		52AB43DD1EE84DBE00E6F4F8 /* InteriorCarDoorTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43931EE84DBE00E6F4F8 /* InteriorCarDoorTypeViewController.m */; };
+		52AB43DE1EE84DBE00E6F4F8 /* InteriorCarMainCopReturnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43951EE84DBE00E6F4F8 /* InteriorCarMainCopReturnViewController.m */; };
+		52AB43DF1EE84DBE00E6F4F8 /* InteriorCarTransom1sViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43971EE84DBE00E6F4F8 /* InteriorCarTransom1sViewController.m */; };
+		52AB43E01EE84DBE00E6F4F8 /* InteriorCarTransom2sViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43991EE84DBE00E6F4F8 /* InteriorCarTransom2sViewController.m */; };
+		52AB43E11EE84DBE00E6F4F8 /* InteriorCarTransomNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB439B1EE84DBE00E6F4F8 /* InteriorCarTransomNotesViewController.m */; };
+		52AB43E21EE84DBE00E6F4F8 /* InteriorCarTransomPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB439D1EE84DBE00E6F4F8 /* InteriorCarTransomPhotosViewController.m */; };
+		52AB43E31EE84DBE00E6F4F8 /* InteriorCarTransomProfile1sViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB439F1EE84DBE00E6F4F8 /* InteriorCarTransomProfile1sViewController.m */; };
+		52AB43E41EE84DBE00E6F4F8 /* InteriorCarTransomProfile2sViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43A11EE84DBE00E6F4F8 /* InteriorCarTransomProfile2sViewController.m */; };
+		52AB43E51EE84DBE00E6F4F8 /* LobbyFeaturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43A41EE84DBE00E6F4F8 /* LobbyFeaturesViewController.m */; };
+		52AB43E61EE84DBE00E6F4F8 /* LobbyLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43A61EE84DBE00E6F4F8 /* LobbyLocationViewController.m */; };
+		52AB43E71EE84DBE00E6F4F8 /* LobbyMeasurementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43A81EE84DBE00E6F4F8 /* LobbyMeasurementViewController.m */; };
+		52AB43E81EE84DBE00E6F4F8 /* LobbyNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43AA1EE84DBE00E6F4F8 /* LobbyNotesViewController.m */; };
+		52AB43E91EE84DBE00E6F4F8 /* LobbyPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43AC1EE84DBE00E6F4F8 /* LobbyPhotosViewController.m */; };
+		52AB43EA1EE84DBE00E6F4F8 /* LobbyVisibilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB43AE1EE84DBE00E6F4F8 /* LobbyVisibilityViewController.m */; };
+		52AB44191EE8574100E6F4F8 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AB44181EE8574100E6F4F8 /* Second.storyboard */; };
+		52CDECD01EDFC226005F7F0C /* ExistingSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CDECCF1EDFC226005F7F0C /* ExistingSurveysViewController.m */; };
+		52CDECD31EDFC296005F7F0C /* ExistingSurveyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CDECD21EDFC296005F7F0C /* ExistingSurveyCell.m */; };
+		52CDECD61EDFD4B1005F7F0C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CDECD51EDFD4B1005F7F0C /* SettingsViewController.m */; };
+		52CDECD91EDFD87F005F7F0C /* OptionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CDECD81EDFD87F005F7F0C /* OptionButton.m */; };
+		52CDECE41EDFF36B005F7F0C /* ExistingSurveyOperationsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CDECE31EDFF36B005F7F0C /* ExistingSurveyOperationsView.m */; };
+		52CDECE61EDFF379005F7F0C /* ExistingSurveyOperationsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CDECE51EDFF379005F7F0C /* ExistingSurveyOperationsView.xib */; };
+		52CDECE91EE01185005F7F0C /* ExistingSurveyDeleteConfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CDECE81EE01185005F7F0C /* ExistingSurveyDeleteConfirmView.m */; };
+		52CDECEB1EE01198005F7F0C /* ExistingSurveyDeleteConfirmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CDECEA1EE01198005F7F0C /* ExistingSurveyDeleteConfirmView.xib */; };
+		52D378CE1EDC1E1400678331 /* MADViewNagivator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D378CD1EDC1E1400678331 /* MADViewNagivator.m */; };
+		52D378D21EDC23D800678331 /* MADNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D378D11EDC23D800678331 /* MADNavigationController.m */; };
+		52D3FA6A1EE7F353008EB624 /* CarCopNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA691EE7F353008EB624 /* CarCopNumberViewController.m */; };
+		52D3FA6D1EE7F393008EB624 /* CarCopNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA6C1EE7F393008EB624 /* CarCopNameViewController.m */; };
+		52D3FA701EE7F3B7008EB624 /* CarCopStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA6F1EE7F3B7008EB624 /* CarCopStyleViewController.m */; };
+		52D3FA731EE7F3D6008EB624 /* CarCopAppliedMeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA721EE7F3D6008EB624 /* CarCopAppliedMeasurementsViewController.m */; };
+		52D3FA761EE7F3EA008EB624 /* CarCopSwingMeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA751EE7F3EA008EB624 /* CarCopSwingMeasurementsViewController.m */; };
+		52D3FA791EE7F3FB008EB624 /* CarCopNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA781EE7F3FB008EB624 /* CarCopNotesViewController.m */; };
+		52D3FA7C1EE7F413008EB624 /* CarCopPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA7B1EE7F413008EB624 /* CarCopPhotosViewController.m */; };
+		52D3FA7F1EE7F43E008EB624 /* CarRidingLanternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA7E1EE7F43E008EB624 /* CarRidingLanternViewController.m */; };
+		52D3FA821EE7F450008EB624 /* CarRidingLanternMountingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA811EE7F450008EB624 /* CarRidingLanternMountingViewController.m */; };
+		52D3FA851EE7F464008EB624 /* CarRidingLanternMeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA841EE7F464008EB624 /* CarRidingLanternMeasurementsViewController.m */; };
+		52D3FA881EE7F476008EB624 /* CarRidingLanternNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA871EE7F476008EB624 /* CarRidingLanternNotesViewController.m */; };
+		52D3FA8B1EE7F492008EB624 /* CarRidingLanternPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA8A1EE7F492008EB624 /* CarRidingLanternPhotosViewController.m */; };
+		52D3FA8F1EE7F4D6008EB624 /* CarSeparatePIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA8E1EE7F4D6008EB624 /* CarSeparatePIViewController.m */; };
+		52D3FA921EE7F4EC008EB624 /* CarSeparatePIMountingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA911EE7F4EC008EB624 /* CarSeparatePIMountingViewController.m */; };
+		52D3FA951EE7F504008EB624 /* CarSeparatePIMeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA941EE7F504008EB624 /* CarSeparatePIMeasurementsViewController.m */; };
+		52D3FA981EE7F517008EB624 /* CarSeparatePINotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA971EE7F517008EB624 /* CarSeparatePINotesViewController.m */; };
+		52D3FA9B1EE7F528008EB624 /* CarSeparatePIPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA9A1EE7F528008EB624 /* CarSeparatePIPhotosViewController.m */; };
+		52D3FA9E1EE830DF008EB624 /* WeightSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FA9D1EE830DF008EB624 /* WeightSelectView.m */; };
+		52D3FAA01EE830EB008EB624 /* WeightSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D3FA9F1EE830EB008EB624 /* WeightSelectView.xib */; };
+		52D6C4CD1EE3A5F3001C34CB /* FloorDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D6C4CC1EE3A5F3001C34CB /* FloorDescriptionViewController.m */; };
+		52D6C4D11EE3B6E2001C34CB /* HallStationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D6C4D01EE3B6E2001C34CB /* HallStationViewController.m */; };
+		52D6C4D41EE3BC15001C34CB /* HallStationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D6C4D31EE3BC15001C34CB /* HallStationListViewController.m */; };
+		52D7D3C61FAF860E0002DF72 /* EditHallStationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D7D3C51FAF860E0002DF72 /* EditHallStationListViewController.m */; };
+		52D7D3C91FAFCB450002DF72 /* EditLanternListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D7D3C81FAFCB450002DF72 /* EditLanternListViewController.m */; };
+		52D7D3CC1FAFD5CB0002DF72 /* EditCarListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D7D3CB1FAFD5CB0002DF72 /* EditCarListViewController.m */; };
+		52D7D3CF1FAFDD680002DF72 /* EditInteriorCarListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D7D3CE1FAFDD680002DF72 /* EditInteriorCarListViewController.m */; };
+		52D7D3D21FAFE4840002DF72 /* EditHallEntranceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D7D3D11FAFE4840002DF72 /* EditHallEntranceListViewController.m */; };
+		52D84E8C1EE65968002EDDFA /* HelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D84E8B1EE65968002EDDFA /* HelpView.m */; };
+		52D84E8E1EE65976002EDDFA /* HelpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D84E8D1EE65976002EDDFA /* HelpView.xib */; };
+		52D84E911EE69476002EDDFA /* HallStationDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D84E901EE69476002EDDFA /* HallStationDescriptionViewController.m */; };
+		52D84E941EE69F9D002EDDFA /* HallStationMountingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D84E931EE69F9D002EDDFA /* HallStationMountingViewController.m */; };
+		52D84E971EE6A507002EDDFA /* HallStationWallMaterialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D84E961EE6A507002EDDFA /* HallStationWallMaterialViewController.m */; };
+		52D84E9A1EE6AEC9002EDDFA /* HallStationMeasurementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D84E991EE6AEC9002EDDFA /* HallStationMeasurementViewController.m */; };
+		52D84E9D1EE6B513002EDDFA /* HallStationNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D84E9C1EE6B513002EDDFA /* HallStationNotesViewController.m */; };
+		52D84EA11EE6BFA8002EDDFA /* LanternNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D84EA01EE6BFA8002EDDFA /* LanternNumberViewController.m */; };
+		52D84EA41EE6C507002EDDFA /* LanternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D84EA31EE6C507002EDDFA /* LanternViewController.m */; };
+		52D84EA71EE6C796002EDDFA /* LanternListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D84EA61EE6C796002EDDFA /* LanternListViewController.m */; };
+		52E00EE61FAF452600F42899 /* EditLobbyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E00EE51FAF452600F42899 /* EditLobbyListViewController.m */; };
+		52E00EE91FAF479600F42899 /* EditListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E00EE81FAF479600F42899 /* EditListViewCell.m */; };
+		52E00EF11FAF631400F42899 /* DeleteItemConfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E00EEF1FAF631400F42899 /* DeleteItemConfirmView.m */; };
+		52E00EF21FAF631400F42899 /* DeleteItemConfirmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E00EF01FAF631400F42899 /* DeleteItemConfirmView.xib */; };
+		52E00EF51FAF784100F42899 /* EditBankListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E00EF41FAF784100F42899 /* EditBankListViewController.m */; };
+		52E01D731EE10282000C3108 /* MADInfoAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E01D721EE10282000C3108 /* MADInfoAlert.m */; };
+		52E01D751EE1029E000C3108 /* MADInfoAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E01D741EE1029E000C3108 /* MADInfoAlert.xib */; };
+		52E20EC61EDCDFE7000FA6A4 /* MADMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E20EC31EDCDFE7000FA6A4 /* MADMainCell.m */; };
+		52E20EC91EDCE024000FA6A4 /* MADNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E20EC81EDCE024000FA6A4 /* MADNavigationView.m */; };
+		52E20ECB1EDCE039000FA6A4 /* MADNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E20ECA1EDCE039000FA6A4 /* MADNavigationView.xib */; };
+		52EB46F71EE03AD600BC9883 /* SubmitProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB46F61EE03AD600BC9883 /* SubmitProjectViewController.m */; };
+		52EBCF6F1FCB07FC00E2D524 /* HallEntranceSkipRestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EBCF6E1FCB07FC00E2D524 /* HallEntranceSkipRestViewController.m */; };
+		52EBCF731FCB123E00E2D524 /* SkipRestConfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EBCF711FCB123E00E2D524 /* SkipRestConfirmView.m */; };
+		52EBCF741FCB123E00E2D524 /* SkipRestConfirmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EBCF721FCB123E00E2D524 /* SkipRestConfirmView.xib */; };
+		52F195FD1FEAE2B200349608 /* NSString+Double.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F195FC1FEAE2B200349608 /* NSString+Double.m */; };
+		52F82F291EFB88B70052DDFE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F82F271EFB88820052DDFE /* MessageUI.framework */; };
+		52F91AB81EF13B89004B6F75 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F91AB71EF13B89004B6F75 /* PhotosViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		520264D41FB2045B005FAABC /* MADWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADWaitingView.h; sourceTree = "<group>"; };
+		520264D51FB2045B005FAABC /* MADWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADWaitingView.m; sourceTree = "<group>"; };
+		520264D61FB2045B005FAABC /* MADWaitingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MADWaitingView.xib; sourceTree = "<group>"; };
+		520264D91FB20FA4005FAABC /* MADWarningAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADWarningAlert.h; sourceTree = "<group>"; };
+		520264DA1FB20FA4005FAABC /* MADWarningAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADWarningAlert.m; sourceTree = "<group>"; };
+		520264DB1FB20FA4005FAABC /* MADWarningAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MADWarningAlert.xib; sourceTree = "<group>"; };
+		520DBE381EDE62EB0012C019 /* NewSurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewSurveyViewController.h; sourceTree = "<group>"; };
+		520DBE391EDE62EB0012C019 /* NewSurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewSurveyViewController.m; sourceTree = "<group>"; };
+		521885711EE6F97300C1DFD0 /* CarDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDescriptionViewController.h; sourceTree = "<group>"; };
+		521885721EE6F97300C1DFD0 /* CarDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDescriptionViewController.m; sourceTree = "<group>"; };
+		521885741EE6F98700C1DFD0 /* CarLicenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarLicenseViewController.h; sourceTree = "<group>"; };
+		521885751EE6F98700C1DFD0 /* CarLicenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarLicenseViewController.m; sourceTree = "<group>"; };
+		521885771EE6F9C400C1DFD0 /* CarTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarTypeViewController.h; sourceTree = "<group>"; };
+		521885781EE6F9C400C1DFD0 /* CarTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarTypeViewController.m; sourceTree = "<group>"; };
+		5218857A1EE6F9E000C1DFD0 /* CarBackdoorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarBackdoorViewController.h; sourceTree = "<group>"; };
+		5218857B1EE6F9E000C1DFD0 /* CarBackdoorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarBackdoorViewController.m; sourceTree = "<group>"; };
+		5218857D1EE6FA0100C1DFD0 /* CarDoorCoincidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDoorCoincidingViewController.h; sourceTree = "<group>"; };
+		5218857E1EE6FA0100C1DFD0 /* CarDoorCoincidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDoorCoincidingViewController.m; sourceTree = "<group>"; };
+		521885801EE6FA1600C1DFD0 /* CarPushButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarPushButtonsViewController.h; sourceTree = "<group>"; };
+		521885811EE6FA1600C1DFD0 /* CarPushButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarPushButtonsViewController.m; sourceTree = "<group>"; };
+		521885831EE6FA2D00C1DFD0 /* CarDoorMeasurementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDoorMeasurementsViewController.h; sourceTree = "<group>"; };
+		521885841EE6FA2D00C1DFD0 /* CarDoorMeasurementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDoorMeasurementsViewController.m; sourceTree = "<group>"; };
+		521885861EE6FA4000C1DFD0 /* CarHandrailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarHandrailViewController.h; sourceTree = "<group>"; };
+		521885871EE6FA4000C1DFD0 /* CarHandrailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarHandrailViewController.m; sourceTree = "<group>"; };
+		521885891EE6FA5900C1DFD0 /* CarMeasurementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarMeasurementsViewController.h; sourceTree = "<group>"; };
+		5218858A1EE6FA5A00C1DFD0 /* CarMeasurementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarMeasurementsViewController.m; sourceTree = "<group>"; };
+		5218858C1EE6FA7100C1DFD0 /* CarNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarNotesViewController.h; sourceTree = "<group>"; };
+		5218858D1EE6FA7100C1DFD0 /* CarNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarNotesViewController.m; sourceTree = "<group>"; };
+		5218858F1EE6FA8400C1DFD0 /* CarPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarPhotosViewController.h; sourceTree = "<group>"; };
+		521885901EE6FA8400C1DFD0 /* CarPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarPhotosViewController.m; sourceTree = "<group>"; };
+		521B69F41ED850460059DCBC /* MADSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		521B69F81ED850460059DCBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		521B69FA1ED850460059DCBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		521B69FB1ED850460059DCBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		521B69FD1ED850460059DCBC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		521B69FE1ED850460059DCBC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		521B6A011ED850460059DCBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		521B6A041ED850460059DCBC /* MADSurvey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MADSurvey.xcdatamodel; sourceTree = "<group>"; };
+		521B6A061ED850460059DCBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		521B6A091ED850460059DCBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		521B6A0B1ED850460059DCBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52450D151F2957B700DBA408 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		52450D161F2957B700DBA408 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		524C0F8C1F1B64B30016D0E5 /* Cop+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cop+CoreDataClass.h"; sourceTree = "<group>"; };
+		524C0F8D1F1B64B30016D0E5 /* Cop+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Cop+CoreDataClass.m"; sourceTree = "<group>"; };
+		524C0F8E1F1B64B30016D0E5 /* Cop+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cop+CoreDataProperties.h"; sourceTree = "<group>"; };
+		524C0F8F1F1B64B30016D0E5 /* Cop+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Cop+CoreDataProperties.m"; sourceTree = "<group>"; };
+		524C0F901F1B64B30016D0E5 /* InteriorCarDoor+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InteriorCarDoor+CoreDataClass.h"; sourceTree = "<group>"; };
+		524C0F911F1B64B30016D0E5 /* InteriorCarDoor+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InteriorCarDoor+CoreDataClass.m"; sourceTree = "<group>"; };
+		524C0F921F1B64B30016D0E5 /* InteriorCarDoor+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InteriorCarDoor+CoreDataProperties.h"; sourceTree = "<group>"; };
+		524C0F931F1B64B30016D0E5 /* InteriorCarDoor+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InteriorCarDoor+CoreDataProperties.m"; sourceTree = "<group>"; };
+		524C0F941F1B64B30016D0E5 /* Lantern+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lantern+CoreDataClass.h"; sourceTree = "<group>"; };
+		524C0F951F1B64B30016D0E5 /* Lantern+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Lantern+CoreDataClass.m"; sourceTree = "<group>"; };
+		524C0F961F1B64B30016D0E5 /* Lantern+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lantern+CoreDataProperties.h"; sourceTree = "<group>"; };
+		524C0F971F1B64B30016D0E5 /* Lantern+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Lantern+CoreDataProperties.m"; sourceTree = "<group>"; };
+		524C0F981F1B64B30016D0E5 /* Lobby+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lobby+CoreDataClass.h"; sourceTree = "<group>"; };
+		524C0F991F1B64B30016D0E5 /* Lobby+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Lobby+CoreDataClass.m"; sourceTree = "<group>"; };
+		524C0F9A1F1B64B30016D0E5 /* Lobby+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lobby+CoreDataProperties.h"; sourceTree = "<group>"; };
+		524C0F9B1F1B64B30016D0E5 /* Lobby+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Lobby+CoreDataProperties.m"; sourceTree = "<group>"; };
+		524C0F9C1F1B64B30016D0E5 /* HallStation+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HallStation+CoreDataClass.h"; sourceTree = "<group>"; };
+		524C0F9D1F1B64B40016D0E5 /* HallStation+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HallStation+CoreDataClass.m"; sourceTree = "<group>"; };
+		524C0F9E1F1B64B40016D0E5 /* HallStation+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HallStation+CoreDataProperties.h"; sourceTree = "<group>"; };
+		524C0F9F1F1B64B40016D0E5 /* HallStation+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HallStation+CoreDataProperties.m"; sourceTree = "<group>"; };
+		524C0FA01F1B64B40016D0E5 /* Photo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+CoreDataClass.h"; sourceTree = "<group>"; };
+		524C0FA11F1B64B40016D0E5 /* Photo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+CoreDataClass.m"; sourceTree = "<group>"; };
+		524C0FA21F1B64B40016D0E5 /* Photo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		524C0FA31F1B64B40016D0E5 /* Photo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		524C0FA41F1B64B40016D0E5 /* Project+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Project+CoreDataClass.h"; sourceTree = "<group>"; };
+		524C0FA51F1B64B40016D0E5 /* Project+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Project+CoreDataClass.m"; sourceTree = "<group>"; };
+		524C0FA61F1B64B40016D0E5 /* Project+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Project+CoreDataProperties.h"; sourceTree = "<group>"; };
+		524C0FA71F1B64B40016D0E5 /* Project+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Project+CoreDataProperties.m"; sourceTree = "<group>"; };
+		524C0FA81F1B64B40016D0E5 /* Bank+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bank+CoreDataClass.h"; sourceTree = "<group>"; };
+		524C0FA91F1B64B40016D0E5 /* Bank+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bank+CoreDataClass.m"; sourceTree = "<group>"; };
+		524C0FAA1F1B64B40016D0E5 /* Bank+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bank+CoreDataProperties.h"; sourceTree = "<group>"; };
+		524C0FAB1F1B64B40016D0E5 /* Bank+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bank+CoreDataProperties.m"; sourceTree = "<group>"; };
+		524C0FAC1F1B64B40016D0E5 /* HallEntrance+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HallEntrance+CoreDataClass.h"; sourceTree = "<group>"; };
+		524C0FAD1F1B64B40016D0E5 /* HallEntrance+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HallEntrance+CoreDataClass.m"; sourceTree = "<group>"; };
+		524C0FAE1F1B64B40016D0E5 /* HallEntrance+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HallEntrance+CoreDataProperties.h"; sourceTree = "<group>"; };
+		524C0FAF1F1B64B40016D0E5 /* HallEntrance+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HallEntrance+CoreDataProperties.m"; sourceTree = "<group>"; };
+		524C0FB01F1B64B40016D0E5 /* Car+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+CoreDataClass.h"; sourceTree = "<group>"; };
+		524C0FB11F1B64B40016D0E5 /* Car+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+CoreDataClass.m"; sourceTree = "<group>"; };
+		524C0FB21F1B64B40016D0E5 /* Car+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+CoreDataProperties.h"; sourceTree = "<group>"; };
+		524C0FB31F1B64B40016D0E5 /* Car+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+CoreDataProperties.m"; sourceTree = "<group>"; };
+		524C0FB41F1B64B40016D0E5 /* InteriorCar+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InteriorCar+CoreDataClass.h"; sourceTree = "<group>"; };
+		524C0FB51F1B64B40016D0E5 /* InteriorCar+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InteriorCar+CoreDataClass.m"; sourceTree = "<group>"; };
+		524C0FB61F1B64B40016D0E5 /* InteriorCar+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InteriorCar+CoreDataProperties.h"; sourceTree = "<group>"; };
+		524C0FB71F1B64B40016D0E5 /* InteriorCar+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InteriorCar+CoreDataProperties.m"; sourceTree = "<group>"; };
+		524E49891EE6E99900E6769A /* HallStationPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallStationPhotosViewController.h; sourceTree = "<group>"; };
+		524E498A1EE6E99900E6769A /* HallStationPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallStationPhotosViewController.m; sourceTree = "<group>"; };
+		524E498C1EE6EBB900E6769A /* LanternPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanternPhotosViewController.h; sourceTree = "<group>"; };
+		524E498D1EE6EBB900E6769A /* LanternPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanternPhotosViewController.m; sourceTree = "<group>"; };
+		525161D91FA8126D00C55D0C /* StopSurveyConfirmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopSurveyConfirmView.h; sourceTree = "<group>"; };
+		525161DA1FA8126D00C55D0C /* StopSurveyConfirmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopSurveyConfirmView.m; sourceTree = "<group>"; };
+		525161DB1FA8126D00C55D0C /* StopSurveyConfirmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StopSurveyConfirmView.xib; sourceTree = "<group>"; };
+		526393741FB0E3030028825D /* SubmitConfirmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitConfirmView.h; sourceTree = "<group>"; };
+		526393751FB0E3030028825D /* SubmitConfirmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitConfirmView.m; sourceTree = "<group>"; };
+		526393761FB0E3030028825D /* SubmitConfirmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitConfirmView.xib; sourceTree = "<group>"; };
+		526E282F1F0F9F3700A8FD8B /* InteriorCarCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarCountViewController.h; sourceTree = "<group>"; };
+		526E28301F0F9F3700A8FD8B /* InteriorCarCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarCountViewController.m; sourceTree = "<group>"; };
+		5274E3871F0643D700B6867B /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		5274E3881F0643D700B6867B /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		5274E42F1F07C02300B6867B /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		5274E4301F07C02300B6867B /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		5278D0781FADE2AD00998BBA /* ProjectEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectEditViewController.h; sourceTree = "<group>"; };
+		5278D0791FADE2AD00998BBA /* ProjectEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectEditViewController.m; sourceTree = "<group>"; };
+		5279D9B11EE159C600456C85 /* ProjectPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectPhotosViewController.h; sourceTree = "<group>"; };
+		5279D9B21EE159C600456C85 /* ProjectPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectPhotosViewController.m; sourceTree = "<group>"; };
+		5279D9B61EE15AC700456C85 /* ProjectItemsToSurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectItemsToSurveyViewController.h; sourceTree = "<group>"; };
+		5279D9B71EE15AC700456C85 /* ProjectItemsToSurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectItemsToSurveyViewController.m; sourceTree = "<group>"; };
+		5279D9B81EE15AC700456C85 /* ProjectJpbTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectJpbTypeViewController.h; sourceTree = "<group>"; };
+		5279D9B91EE15AC700456C85 /* ProjectJpbTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectJpbTypeViewController.m; sourceTree = "<group>"; };
+		5279D9BA1EE15AC700456C85 /* ProjectNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectNotesViewController.h; sourceTree = "<group>"; };
+		5279D9BB1EE15AC700456C85 /* ProjectNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectNotesViewController.m; sourceTree = "<group>"; };
+		5279D9BC1EE15AC700456C85 /* ProjectNumberBanksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectNumberBanksViewController.h; sourceTree = "<group>"; };
+		5279D9BD1EE15AC700456C85 /* ProjectNumberBanksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectNumberBanksViewController.m; sourceTree = "<group>"; };
+		5279D9BE1EE15AC700456C85 /* ProjectNumberFloorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectNumberFloorsViewController.h; sourceTree = "<group>"; };
+		5279D9BF1EE15AC700456C85 /* ProjectNumberFloorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectNumberFloorsViewController.m; sourceTree = "<group>"; };
+		5279D9C01EE15AC700456C85 /* ProjectNumberLobbyPanelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectNumberLobbyPanelsViewController.h; sourceTree = "<group>"; };
+		5279D9C11EE15AC700456C85 /* ProjectNumberLobbyPanelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectNumberLobbyPanelsViewController.m; sourceTree = "<group>"; };
+		5279D9C91EE15B2900456C85 /* CheckButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckButton.h; sourceTree = "<group>"; };
+		5279D9CA1EE15B2900456C85 /* CheckButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckButton.m; sourceTree = "<group>"; };
+		5279D9CC1EE170B400456C85 /* PhotoSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSelectView.h; sourceTree = "<group>"; };
+		5279D9CD1EE170B400456C85 /* PhotoSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSelectView.m; sourceTree = "<group>"; };
+		5279D9CF1EE170C400456C85 /* PhotoSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoSelectView.xib; sourceTree = "<group>"; };
+		5280AB6F1FCA99F9004605BA /* InteriorCarCopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarCopyViewController.h; sourceTree = "<group>"; };
+		5280AB701FCA99F9004605BA /* InteriorCarCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarCopyViewController.m; sourceTree = "<group>"; };
+		5280AB721FCAA21A004605BA /* InteriorCarExistingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarExistingListViewController.h; sourceTree = "<group>"; };
+		5280AB731FCAA21A004605BA /* InteriorCarExistingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarExistingListViewController.m; sourceTree = "<group>"; };
+		5280AB751FCAB3DE004605BA /* InteriorCarWallTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarWallTypeViewController.h; sourceTree = "<group>"; };
+		5280AB761FCAB3DE004605BA /* InteriorCarWallTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarWallTypeViewController.m; sourceTree = "<group>"; };
+		5280AB841FCABC88004605BA /* MADSurvey 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MADSurvey 2.xcdatamodel"; sourceTree = "<group>"; };
+		5280AB851FCACE42004605BA /* InteriorCarLTransomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarLTransomViewController.h; sourceTree = "<group>"; };
+		5280AB861FCACE42004605BA /* InteriorCarLTransomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarLTransomViewController.m; sourceTree = "<group>"; };
+		5280AB881FCACE57004605BA /* InteriorCarHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarHeaderViewController.h; sourceTree = "<group>"; };
+		5280AB891FCACE57004605BA /* InteriorCarHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarHeaderViewController.m; sourceTree = "<group>"; };
+		5280AB8B1FCACE79004605BA /* InteriorCarFlatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarFlatViewController.h; sourceTree = "<group>"; };
+		5280AB8C1FCACE79004605BA /* InteriorCarFlatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarFlatViewController.m; sourceTree = "<group>"; };
+		5280AB8E1FCB3141004605BA /* MADSurvey 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MADSurvey 3.xcdatamodel"; sourceTree = "<group>"; };
+		5280AB951FCB45D1004605BA /* HallEntranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallEntranceViewController.h; sourceTree = "<group>"; };
+		5280AB961FCB45D1004605BA /* HallEntranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallEntranceViewController.m; sourceTree = "<group>"; };
+		5280AB981FCB4B5D004605BA /* HallEntranceExistingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallEntranceExistingListViewController.h; sourceTree = "<group>"; };
+		5280AB991FCB4B5D004605BA /* HallEntranceExistingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallEntranceExistingListViewController.m; sourceTree = "<group>"; };
+		528139681EE6D6C900A1B7F8 /* LanternSameAsMeasurementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanternSameAsMeasurementViewController.h; sourceTree = "<group>"; };
+		528139691EE6D6C900A1B7F8 /* LanternSameAsMeasurementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanternSameAsMeasurementViewController.m; sourceTree = "<group>"; };
+		5281396B1EE6D6D900A1B7F8 /* LanternReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanternReviewViewController.h; sourceTree = "<group>"; };
+		5281396C1EE6D6D900A1B7F8 /* LanternReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanternReviewViewController.m; sourceTree = "<group>"; };
+		5281396E1EE6D6F100A1B7F8 /* LanternDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanternDescriptionViewController.h; sourceTree = "<group>"; };
+		5281396F1EE6D6F100A1B7F8 /* LanternDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanternDescriptionViewController.m; sourceTree = "<group>"; };
+		528139711EE6D6FC00A1B7F8 /* LanternMountingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanternMountingViewController.h; sourceTree = "<group>"; };
+		528139721EE6D6FC00A1B7F8 /* LanternMountingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanternMountingViewController.m; sourceTree = "<group>"; };
+		528139741EE6D70900A1B7F8 /* LanternWallMaterialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanternWallMaterialViewController.h; sourceTree = "<group>"; };
+		528139751EE6D70900A1B7F8 /* LanternWallMaterialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanternWallMaterialViewController.m; sourceTree = "<group>"; };
+		528139771EE6D72400A1B7F8 /* LanternMeasurementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanternMeasurementsViewController.h; sourceTree = "<group>"; };
+		528139781EE6D72400A1B7F8 /* LanternMeasurementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanternMeasurementsViewController.m; sourceTree = "<group>"; };
+		5281397A1EE6D73600A1B7F8 /* LanternNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanternNotesViewController.h; sourceTree = "<group>"; };
+		5281397B1EE6D73600A1B7F8 /* LanternNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanternNotesViewController.m; sourceTree = "<group>"; };
+		5296F0C61EDC459D00599688 /* MADMotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADMotherViewController.h; sourceTree = "<group>"; };
+		5296F0C71EDC459D00599688 /* MADMotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADMotherViewController.m; sourceTree = "<group>"; };
+		5297B9591EE40CFB00255FE4 /* HallStationSameAsMeasurementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallStationSameAsMeasurementsViewController.h; sourceTree = "<group>"; };
+		5297B95A1EE40CFB00255FE4 /* HallStationSameAsMeasurementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallStationSameAsMeasurementsViewController.m; sourceTree = "<group>"; };
+		5297B95C1EE4145800255FE4 /* HallStationReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallStationReviewViewController.h; sourceTree = "<group>"; };
+		5297B95D1EE4145800255FE4 /* HallStationReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallStationReviewViewController.m; sourceTree = "<group>"; };
+		52AB43331EE84DBE00E6F4F8 /* BankNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankNameViewController.h; sourceTree = "<group>"; };
+		52AB43341EE84DBE00E6F4F8 /* BankNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankNameViewController.m; sourceTree = "<group>"; };
+		52AB43351EE84DBE00E6F4F8 /* BankNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankNotesViewController.h; sourceTree = "<group>"; };
+		52AB43361EE84DBE00E6F4F8 /* BankNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankNotesViewController.m; sourceTree = "<group>"; };
+		52AB43371EE84DBE00E6F4F8 /* BankNumberCarsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankNumberCarsViewController.h; sourceTree = "<group>"; };
+		52AB43381EE84DBE00E6F4F8 /* BankNumberCarsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankNumberCarsViewController.m; sourceTree = "<group>"; };
+		52AB43391EE84DBE00E6F4F8 /* BankNumberRisersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankNumberRisersViewController.h; sourceTree = "<group>"; };
+		52AB433A1EE84DBE00E6F4F8 /* BankNumberRisersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankNumberRisersViewController.m; sourceTree = "<group>"; };
+		52AB433B1EE84DBE00E6F4F8 /* BankPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankPhotosViewController.h; sourceTree = "<group>"; };
+		52AB433C1EE84DBE00E6F4F8 /* BankPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankPhotosViewController.m; sourceTree = "<group>"; };
+		52AB433E1EE84DBE00E6F4F8 /* FinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalViewController.h; sourceTree = "<group>"; };
+		52AB433F1EE84DBE00E6F4F8 /* FinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalViewController.m; sourceTree = "<group>"; };
+		52AB43401EE84DBE00E6F4F8 /* HallEntranceDoorTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallEntranceDoorTypeViewController.h; sourceTree = "<group>"; };
+		52AB43411EE84DBE00E6F4F8 /* HallEntranceDoorTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallEntranceDoorTypeViewController.m; sourceTree = "<group>"; };
+		52AB43421EE84DBE00E6F4F8 /* HallEntrancePhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallEntrancePhotosViewController.h; sourceTree = "<group>"; };
+		52AB43431EE84DBE00E6F4F8 /* HallEntrancePhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallEntrancePhotosViewController.m; sourceTree = "<group>"; };
+		52AB43441EE84DBE00E6F4F8 /* HallInstranceTransomMeasurement1sViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallInstranceTransomMeasurement1sViewController.h; sourceTree = "<group>"; };
+		52AB43451EE84DBE00E6F4F8 /* HallInstranceTransomMeasurement1sViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallInstranceTransomMeasurement1sViewController.m; sourceTree = "<group>"; };
+		52AB43461EE84DBE00E6F4F8 /* HallInstranceTransomMeasurementCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallInstranceTransomMeasurementCenterViewController.h; sourceTree = "<group>"; };
+		52AB43471EE84DBE00E6F4F8 /* HallInstranceTransomMeasurementCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallInstranceTransomMeasurementCenterViewController.m; sourceTree = "<group>"; };
+		52AB43481EE84DBE00E6F4F8 /* HallInstranseTransomMeasurement2sViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallInstranseTransomMeasurement2sViewController.h; sourceTree = "<group>"; };
+		52AB43491EE84DBE00E6F4F8 /* HallInstranseTransomMeasurement2sViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallInstranseTransomMeasurement2sViewController.m; sourceTree = "<group>"; };
+		52AB434A1EE84DBE00E6F4F8 /* HallIntranceDoorOpeningDirectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallIntranceDoorOpeningDirectionViewController.h; sourceTree = "<group>"; };
+		52AB434B1EE84DBE00E6F4F8 /* HallIntranceDoorOpeningDirectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallIntranceDoorOpeningDirectionViewController.m; sourceTree = "<group>"; };
+		52AB434C1EE84DBE00E6F4F8 /* HallIntranceFrontReturnMeasurementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallIntranceFrontReturnMeasurementViewController.h; sourceTree = "<group>"; };
+		52AB434D1EE84DBE00E6F4F8 /* HallIntranceFrontReturnMeasurementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallIntranceFrontReturnMeasurementViewController.m; sourceTree = "<group>"; };
+		52AB434E1EE84DBE00E6F4F8 /* HallIntranceNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallIntranceNotesViewController.h; sourceTree = "<group>"; };
+		52AB434F1EE84DBE00E6F4F8 /* HallIntranceNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallIntranceNotesViewController.m; sourceTree = "<group>"; };
+		52AB43501EE84DBE00E6F4F8 /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
+		52AB43511EE84DBE00E6F4F8 /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
+		52AB43531EE84DBE00E6F4F8 /* InteriorCarBackDoorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarBackDoorViewController.h; sourceTree = "<group>"; };
+		52AB43541EE84DBE00E6F4F8 /* InteriorCarBackDoorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarBackDoorViewController.m; sourceTree = "<group>"; };
+		52AB43551EE84DBE00E6F4F8 /* InteriorCarCeilingEscapeHatchLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarCeilingEscapeHatchLocationViewController.h; sourceTree = "<group>"; };
+		52AB43561EE84DBE00E6F4F8 /* InteriorCarCeilingEscapeHatchLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarCeilingEscapeHatchLocationViewController.m; sourceTree = "<group>"; };
+		52AB43571EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarCeilingExhaustFanLocationViewController.h; sourceTree = "<group>"; };
+		52AB43581EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarCeilingExhaustFanLocationViewController.m; sourceTree = "<group>"; };
+		52AB43591EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarCeilingExhaustFanViewController.h; sourceTree = "<group>"; };
+		52AB435A1EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarCeilingExhaustFanViewController.m; sourceTree = "<group>"; };
+		52AB435B1EE84DBE00E6F4F8 /* InteriorCarCeilingFrameTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarCeilingFrameTypeViewController.h; sourceTree = "<group>"; };
+		52AB435C1EE84DBE00E6F4F8 /* InteriorCarCeilingFrameTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarCeilingFrameTypeViewController.m; sourceTree = "<group>"; };
+		52AB435D1EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarCenterReturnMeasurementsAViewController.h; sourceTree = "<group>"; };
+		52AB435E1EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarCenterReturnMeasurementsAViewController.m; sourceTree = "<group>"; };
+		52AB435F1EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarCenterReturnMeasurementsBViewController.h; sourceTree = "<group>"; };
+		52AB43601EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarCenterReturnMeasurementsBViewController.m; sourceTree = "<group>"; };
+		52AB43611EE84DBE00E6F4F8 /* InteriorCarDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarDescriptionViewController.h; sourceTree = "<group>"; };
+		52AB43621EE84DBE00E6F4F8 /* InteriorCarDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarDescriptionViewController.m; sourceTree = "<group>"; };
+		52AB43631EE84DBE00E6F4F8 /* InteriorCarFloorHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarFloorHeightViewController.h; sourceTree = "<group>"; };
+		52AB43641EE84DBE00E6F4F8 /* InteriorCarFloorHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarFloorHeightViewController.m; sourceTree = "<group>"; };
+		52AB43651EE84DBE00E6F4F8 /* InteriorCarFlooringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarFlooringViewController.h; sourceTree = "<group>"; };
+		52AB43661EE84DBE00E6F4F8 /* InteriorCarFlooringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarFlooringViewController.m; sourceTree = "<group>"; };
+		52AB43671EE84DBE00E6F4F8 /* InteriorCarFrontReturnMeasurementsOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarFrontReturnMeasurementsOtherViewController.h; sourceTree = "<group>"; };
+		52AB43681EE84DBE00E6F4F8 /* InteriorCarFrontReturnMeasurementsOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarFrontReturnMeasurementsOtherViewController.m; sourceTree = "<group>"; };
+		52AB43691EE84DBE00E6F4F8 /* InteriorCarFrontReturnTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarFrontReturnTypeViewController.h; sourceTree = "<group>"; };
+		52AB436A1EE84DBE00E6F4F8 /* InteriorCarFrontReturnTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarFrontReturnTypeViewController.m; sourceTree = "<group>"; };
+		52AB436B1EE84DBE00E6F4F8 /* InteriorCarLicenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarLicenceViewController.h; sourceTree = "<group>"; };
+		52AB436C1EE84DBE00E6F4F8 /* InteriorCarLicenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarLicenceViewController.m; sourceTree = "<group>"; };
+		52AB436D1EE84DBE00E6F4F8 /* InteriorCarMeasurementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarMeasurementViewController.h; sourceTree = "<group>"; };
+		52AB436E1EE84DBE00E6F4F8 /* InteriorCarMeasurementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarMeasurementViewController.m; sourceTree = "<group>"; };
+		52AB436F1EE84DBE00E6F4F8 /* InteriorCarOpeningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarOpeningViewController.h; sourceTree = "<group>"; };
+		52AB43701EE84DBE00E6F4F8 /* InteriorCarOpeningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarOpeningViewController.m; sourceTree = "<group>"; };
+		52AB43711EE84DBE00E6F4F8 /* InteriorCarSignleSideMeasurementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarSignleSideMeasurementViewController.h; sourceTree = "<group>"; };
+		52AB43721EE84DBE00E6F4F8 /* InteriorCarSignleSideMeasurementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarSignleSideMeasurementViewController.m; sourceTree = "<group>"; };
+		52AB43731EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarSingleSideReturnMeasurementsAViewController.h; sourceTree = "<group>"; };
+		52AB43741EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarSingleSideReturnMeasurementsAViewController.m; sourceTree = "<group>"; };
+		52AB43751EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarSingleSideReturnMeasurementsBViewController.h; sourceTree = "<group>"; };
+		52AB43761EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarSingleSideReturnMeasurementsBViewController.m; sourceTree = "<group>"; };
+		52AB43771EE84DBE00E6F4F8 /* InteriorCarSlamPostOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarSlamPostOtherViewController.h; sourceTree = "<group>"; };
+		52AB43781EE84DBE00E6F4F8 /* InteriorCarSlamPostOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarSlamPostOtherViewController.m; sourceTree = "<group>"; };
+		52AB43791EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarSlamPostTypeAViewController.h; sourceTree = "<group>"; };
+		52AB437A1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarSlamPostTypeAViewController.m; sourceTree = "<group>"; };
+		52AB437B1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarSlamPostTypeBViewController.h; sourceTree = "<group>"; };
+		52AB437C1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarSlamPostTypeBViewController.m; sourceTree = "<group>"; };
+		52AB437D1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarSlamPostTypeCViewController.h; sourceTree = "<group>"; };
+		52AB437E1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarSlamPostTypeCViewController.m; sourceTree = "<group>"; };
+		52AB437F1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarSlamPostTypeViewController.h; sourceTree = "<group>"; };
+		52AB43801EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarSlamPostTypeViewController.m; sourceTree = "<group>"; };
+		52AB43811EE84DBE00E6F4F8 /* InteriorCarStructureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarStructureViewController.h; sourceTree = "<group>"; };
+		52AB43821EE84DBE00E6F4F8 /* InteriorCarStructureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarStructureViewController.m; sourceTree = "<group>"; };
+		52AB43831EE84DBE00E6F4F8 /* InteriorCarTillerCoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarTillerCoverViewController.h; sourceTree = "<group>"; };
+		52AB43841EE84DBE00E6F4F8 /* InteriorCarTillerCoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarTillerCoverViewController.m; sourceTree = "<group>"; };
+		52AB43851EE84DBE00E6F4F8 /* InteriorCarTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarTypeViewController.h; sourceTree = "<group>"; };
+		52AB43861EE84DBE00E6F4F8 /* InteriorCarTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarTypeViewController.m; sourceTree = "<group>"; };
+		52AB43881EE84DBE00E6F4F8 /* InteriorCarAuxCopReturnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarAuxCopReturnViewController.h; sourceTree = "<group>"; };
+		52AB43891EE84DBE00E6F4F8 /* InteriorCarAuxCopReturnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarAuxCopReturnViewController.m; sourceTree = "<group>"; };
+		52AB438A1EE84DBE00E6F4F8 /* InteriorCarBackWallCloneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarBackWallCloneViewController.h; sourceTree = "<group>"; };
+		52AB438B1EE84DBE00E6F4F8 /* InteriorCarBackWallCloneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarBackWallCloneViewController.m; sourceTree = "<group>"; };
+		52AB438C1EE84DBE00E6F4F8 /* InteriorCarBackWallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarBackWallViewController.h; sourceTree = "<group>"; };
+		52AB438D1EE84DBE00E6F4F8 /* InteriorCarBackWallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarBackWallViewController.m; sourceTree = "<group>"; };
+		52AB438E1EE84DBE00E6F4F8 /* InteriorCarCopInstalledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarCopInstalledViewController.h; sourceTree = "<group>"; };
+		52AB438F1EE84DBE00E6F4F8 /* InteriorCarCopInstalledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarCopInstalledViewController.m; sourceTree = "<group>"; };
+		52AB43901EE84DBE00E6F4F8 /* InteriorCarDoorOpeningDirectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarDoorOpeningDirectionViewController.h; sourceTree = "<group>"; };
+		52AB43911EE84DBE00E6F4F8 /* InteriorCarDoorOpeningDirectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarDoorOpeningDirectionViewController.m; sourceTree = "<group>"; };
+		52AB43921EE84DBE00E6F4F8 /* InteriorCarDoorTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarDoorTypeViewController.h; sourceTree = "<group>"; };
+		52AB43931EE84DBE00E6F4F8 /* InteriorCarDoorTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarDoorTypeViewController.m; sourceTree = "<group>"; };
+		52AB43941EE84DBE00E6F4F8 /* InteriorCarMainCopReturnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarMainCopReturnViewController.h; sourceTree = "<group>"; };
+		52AB43951EE84DBE00E6F4F8 /* InteriorCarMainCopReturnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarMainCopReturnViewController.m; sourceTree = "<group>"; };
+		52AB43961EE84DBE00E6F4F8 /* InteriorCarTransom1sViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarTransom1sViewController.h; sourceTree = "<group>"; };
+		52AB43971EE84DBE00E6F4F8 /* InteriorCarTransom1sViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarTransom1sViewController.m; sourceTree = "<group>"; };
+		52AB43981EE84DBE00E6F4F8 /* InteriorCarTransom2sViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarTransom2sViewController.h; sourceTree = "<group>"; };
+		52AB43991EE84DBE00E6F4F8 /* InteriorCarTransom2sViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarTransom2sViewController.m; sourceTree = "<group>"; };
+		52AB439A1EE84DBE00E6F4F8 /* InteriorCarTransomNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarTransomNotesViewController.h; sourceTree = "<group>"; };
+		52AB439B1EE84DBE00E6F4F8 /* InteriorCarTransomNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarTransomNotesViewController.m; sourceTree = "<group>"; };
+		52AB439C1EE84DBE00E6F4F8 /* InteriorCarTransomPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarTransomPhotosViewController.h; sourceTree = "<group>"; };
+		52AB439D1EE84DBE00E6F4F8 /* InteriorCarTransomPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarTransomPhotosViewController.m; sourceTree = "<group>"; };
+		52AB439E1EE84DBE00E6F4F8 /* InteriorCarTransomProfile1sViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarTransomProfile1sViewController.h; sourceTree = "<group>"; };
+		52AB439F1EE84DBE00E6F4F8 /* InteriorCarTransomProfile1sViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarTransomProfile1sViewController.m; sourceTree = "<group>"; };
+		52AB43A01EE84DBE00E6F4F8 /* InteriorCarTransomProfile2sViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorCarTransomProfile2sViewController.h; sourceTree = "<group>"; };
+		52AB43A11EE84DBE00E6F4F8 /* InteriorCarTransomProfile2sViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorCarTransomProfile2sViewController.m; sourceTree = "<group>"; };
+		52AB43A31EE84DBE00E6F4F8 /* LobbyFeaturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LobbyFeaturesViewController.h; sourceTree = "<group>"; };
+		52AB43A41EE84DBE00E6F4F8 /* LobbyFeaturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LobbyFeaturesViewController.m; sourceTree = "<group>"; };
+		52AB43A51EE84DBE00E6F4F8 /* LobbyLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LobbyLocationViewController.h; sourceTree = "<group>"; };
+		52AB43A61EE84DBE00E6F4F8 /* LobbyLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LobbyLocationViewController.m; sourceTree = "<group>"; };
+		52AB43A71EE84DBE00E6F4F8 /* LobbyMeasurementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LobbyMeasurementViewController.h; sourceTree = "<group>"; };
+		52AB43A81EE84DBE00E6F4F8 /* LobbyMeasurementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LobbyMeasurementViewController.m; sourceTree = "<group>"; };
+		52AB43A91EE84DBE00E6F4F8 /* LobbyNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LobbyNotesViewController.h; sourceTree = "<group>"; };
+		52AB43AA1EE84DBE00E6F4F8 /* LobbyNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LobbyNotesViewController.m; sourceTree = "<group>"; };
+		52AB43AB1EE84DBE00E6F4F8 /* LobbyPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LobbyPhotosViewController.h; sourceTree = "<group>"; };
+		52AB43AC1EE84DBE00E6F4F8 /* LobbyPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LobbyPhotosViewController.m; sourceTree = "<group>"; };
+		52AB43AD1EE84DBE00E6F4F8 /* LobbyVisibilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LobbyVisibilityViewController.h; sourceTree = "<group>"; };
+		52AB43AE1EE84DBE00E6F4F8 /* LobbyVisibilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LobbyVisibilityViewController.m; sourceTree = "<group>"; };
+		52AB44181EE8574100E6F4F8 /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		52CDECCE1EDFC226005F7F0C /* ExistingSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExistingSurveysViewController.h; sourceTree = "<group>"; };
+		52CDECCF1EDFC226005F7F0C /* ExistingSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExistingSurveysViewController.m; sourceTree = "<group>"; };
+		52CDECD11EDFC296005F7F0C /* ExistingSurveyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExistingSurveyCell.h; sourceTree = "<group>"; };
+		52CDECD21EDFC296005F7F0C /* ExistingSurveyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExistingSurveyCell.m; sourceTree = "<group>"; };
+		52CDECD41EDFD4B1005F7F0C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		52CDECD51EDFD4B1005F7F0C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		52CDECD71EDFD87F005F7F0C /* OptionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionButton.h; sourceTree = "<group>"; };
+		52CDECD81EDFD87F005F7F0C /* OptionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionButton.m; sourceTree = "<group>"; };
+		52CDECE21EDFF36B005F7F0C /* ExistingSurveyOperationsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExistingSurveyOperationsView.h; sourceTree = "<group>"; };
+		52CDECE31EDFF36B005F7F0C /* ExistingSurveyOperationsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExistingSurveyOperationsView.m; sourceTree = "<group>"; };
+		52CDECE51EDFF379005F7F0C /* ExistingSurveyOperationsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExistingSurveyOperationsView.xib; sourceTree = "<group>"; };
+		52CDECE71EE01185005F7F0C /* ExistingSurveyDeleteConfirmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExistingSurveyDeleteConfirmView.h; sourceTree = "<group>"; };
+		52CDECE81EE01185005F7F0C /* ExistingSurveyDeleteConfirmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExistingSurveyDeleteConfirmView.m; sourceTree = "<group>"; };
+		52CDECEA1EE01198005F7F0C /* ExistingSurveyDeleteConfirmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExistingSurveyDeleteConfirmView.xib; sourceTree = "<group>"; };
+		52D378CC1EDC1E1400678331 /* MADViewNagivator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADViewNagivator.h; sourceTree = "<group>"; };
+		52D378CD1EDC1E1400678331 /* MADViewNagivator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADViewNagivator.m; sourceTree = "<group>"; };
+		52D378CF1EDC1F0300678331 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		52D378D01EDC23D800678331 /* MADNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADNavigationController.h; sourceTree = "<group>"; };
+		52D378D11EDC23D800678331 /* MADNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADNavigationController.m; sourceTree = "<group>"; };
+		52D3FA681EE7F353008EB624 /* CarCopNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarCopNumberViewController.h; sourceTree = "<group>"; };
+		52D3FA691EE7F353008EB624 /* CarCopNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarCopNumberViewController.m; sourceTree = "<group>"; };
+		52D3FA6B1EE7F393008EB624 /* CarCopNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarCopNameViewController.h; sourceTree = "<group>"; };
+		52D3FA6C1EE7F393008EB624 /* CarCopNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarCopNameViewController.m; sourceTree = "<group>"; };
+		52D3FA6E1EE7F3B7008EB624 /* CarCopStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarCopStyleViewController.h; sourceTree = "<group>"; };
+		52D3FA6F1EE7F3B7008EB624 /* CarCopStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarCopStyleViewController.m; sourceTree = "<group>"; };
+		52D3FA711EE7F3D6008EB624 /* CarCopAppliedMeasurementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarCopAppliedMeasurementsViewController.h; sourceTree = "<group>"; };
+		52D3FA721EE7F3D6008EB624 /* CarCopAppliedMeasurementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarCopAppliedMeasurementsViewController.m; sourceTree = "<group>"; };
+		52D3FA741EE7F3EA008EB624 /* CarCopSwingMeasurementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarCopSwingMeasurementsViewController.h; sourceTree = "<group>"; };
+		52D3FA751EE7F3EA008EB624 /* CarCopSwingMeasurementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarCopSwingMeasurementsViewController.m; sourceTree = "<group>"; };
+		52D3FA771EE7F3FB008EB624 /* CarCopNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarCopNotesViewController.h; sourceTree = "<group>"; };
+		52D3FA781EE7F3FB008EB624 /* CarCopNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarCopNotesViewController.m; sourceTree = "<group>"; };
+		52D3FA7A1EE7F413008EB624 /* CarCopPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarCopPhotosViewController.h; sourceTree = "<group>"; };
+		52D3FA7B1EE7F413008EB624 /* CarCopPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarCopPhotosViewController.m; sourceTree = "<group>"; };
+		52D3FA7D1EE7F43E008EB624 /* CarRidingLanternViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarRidingLanternViewController.h; sourceTree = "<group>"; };
+		52D3FA7E1EE7F43E008EB624 /* CarRidingLanternViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarRidingLanternViewController.m; sourceTree = "<group>"; };
+		52D3FA801EE7F450008EB624 /* CarRidingLanternMountingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarRidingLanternMountingViewController.h; sourceTree = "<group>"; };
+		52D3FA811EE7F450008EB624 /* CarRidingLanternMountingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarRidingLanternMountingViewController.m; sourceTree = "<group>"; };
+		52D3FA831EE7F464008EB624 /* CarRidingLanternMeasurementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarRidingLanternMeasurementsViewController.h; sourceTree = "<group>"; };
+		52D3FA841EE7F464008EB624 /* CarRidingLanternMeasurementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarRidingLanternMeasurementsViewController.m; sourceTree = "<group>"; };
+		52D3FA861EE7F476008EB624 /* CarRidingLanternNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarRidingLanternNotesViewController.h; sourceTree = "<group>"; };
+		52D3FA871EE7F476008EB624 /* CarRidingLanternNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarRidingLanternNotesViewController.m; sourceTree = "<group>"; };
+		52D3FA891EE7F492008EB624 /* CarRidingLanternPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarRidingLanternPhotosViewController.h; sourceTree = "<group>"; };
+		52D3FA8A1EE7F492008EB624 /* CarRidingLanternPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarRidingLanternPhotosViewController.m; sourceTree = "<group>"; };
+		52D3FA8D1EE7F4D6008EB624 /* CarSeparatePIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarSeparatePIViewController.h; sourceTree = "<group>"; };
+		52D3FA8E1EE7F4D6008EB624 /* CarSeparatePIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarSeparatePIViewController.m; sourceTree = "<group>"; };
+		52D3FA901EE7F4EC008EB624 /* CarSeparatePIMountingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarSeparatePIMountingViewController.h; sourceTree = "<group>"; };
+		52D3FA911EE7F4EC008EB624 /* CarSeparatePIMountingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarSeparatePIMountingViewController.m; sourceTree = "<group>"; };
+		52D3FA931EE7F504008EB624 /* CarSeparatePIMeasurementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarSeparatePIMeasurementsViewController.h; sourceTree = "<group>"; };
+		52D3FA941EE7F504008EB624 /* CarSeparatePIMeasurementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarSeparatePIMeasurementsViewController.m; sourceTree = "<group>"; };
+		52D3FA961EE7F517008EB624 /* CarSeparatePINotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarSeparatePINotesViewController.h; sourceTree = "<group>"; };
+		52D3FA971EE7F517008EB624 /* CarSeparatePINotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarSeparatePINotesViewController.m; sourceTree = "<group>"; };
+		52D3FA991EE7F528008EB624 /* CarSeparatePIPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarSeparatePIPhotosViewController.h; sourceTree = "<group>"; };
+		52D3FA9A1EE7F528008EB624 /* CarSeparatePIPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarSeparatePIPhotosViewController.m; sourceTree = "<group>"; };
+		52D3FA9C1EE830DF008EB624 /* WeightSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightSelectView.h; sourceTree = "<group>"; };
+		52D3FA9D1EE830DF008EB624 /* WeightSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightSelectView.m; sourceTree = "<group>"; };
+		52D3FA9F1EE830EB008EB624 /* WeightSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeightSelectView.xib; sourceTree = "<group>"; };
+		52D6C4CB1EE3A5F3001C34CB /* FloorDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorDescriptionViewController.h; sourceTree = "<group>"; };
+		52D6C4CC1EE3A5F3001C34CB /* FloorDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorDescriptionViewController.m; sourceTree = "<group>"; };
+		52D6C4CF1EE3B6E2001C34CB /* HallStationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallStationViewController.h; sourceTree = "<group>"; };
+		52D6C4D01EE3B6E2001C34CB /* HallStationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallStationViewController.m; sourceTree = "<group>"; };
+		52D6C4D21EE3BC15001C34CB /* HallStationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallStationListViewController.h; sourceTree = "<group>"; };
+		52D6C4D31EE3BC15001C34CB /* HallStationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallStationListViewController.m; sourceTree = "<group>"; };
+		52D7D3C41FAF860E0002DF72 /* EditHallStationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditHallStationListViewController.h; sourceTree = "<group>"; };
+		52D7D3C51FAF860E0002DF72 /* EditHallStationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditHallStationListViewController.m; sourceTree = "<group>"; };
+		52D7D3C71FAFCB450002DF72 /* EditLanternListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditLanternListViewController.h; sourceTree = "<group>"; };
+		52D7D3C81FAFCB450002DF72 /* EditLanternListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditLanternListViewController.m; sourceTree = "<group>"; };
+		52D7D3CA1FAFD5CB0002DF72 /* EditCarListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCarListViewController.h; sourceTree = "<group>"; };
+		52D7D3CB1FAFD5CB0002DF72 /* EditCarListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCarListViewController.m; sourceTree = "<group>"; };
+		52D7D3CD1FAFDD680002DF72 /* EditInteriorCarListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditInteriorCarListViewController.h; sourceTree = "<group>"; };
+		52D7D3CE1FAFDD680002DF72 /* EditInteriorCarListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditInteriorCarListViewController.m; sourceTree = "<group>"; };
+		52D7D3D01FAFE4840002DF72 /* EditHallEntranceListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditHallEntranceListViewController.h; sourceTree = "<group>"; };
+		52D7D3D11FAFE4840002DF72 /* EditHallEntranceListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditHallEntranceListViewController.m; sourceTree = "<group>"; };
+		52D84E8A1EE65968002EDDFA /* HelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpView.h; sourceTree = "<group>"; };
+		52D84E8B1EE65968002EDDFA /* HelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpView.m; sourceTree = "<group>"; };
+		52D84E8D1EE65976002EDDFA /* HelpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpView.xib; sourceTree = "<group>"; };
+		52D84E8F1EE69476002EDDFA /* HallStationDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallStationDescriptionViewController.h; sourceTree = "<group>"; };
+		52D84E901EE69476002EDDFA /* HallStationDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallStationDescriptionViewController.m; sourceTree = "<group>"; };
+		52D84E921EE69F9C002EDDFA /* HallStationMountingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallStationMountingViewController.h; sourceTree = "<group>"; };
+		52D84E931EE69F9D002EDDFA /* HallStationMountingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallStationMountingViewController.m; sourceTree = "<group>"; };
+		52D84E951EE6A507002EDDFA /* HallStationWallMaterialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallStationWallMaterialViewController.h; sourceTree = "<group>"; };
+		52D84E961EE6A507002EDDFA /* HallStationWallMaterialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallStationWallMaterialViewController.m; sourceTree = "<group>"; };
+		52D84E981EE6AEC9002EDDFA /* HallStationMeasurementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallStationMeasurementViewController.h; sourceTree = "<group>"; };
+		52D84E991EE6AEC9002EDDFA /* HallStationMeasurementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallStationMeasurementViewController.m; sourceTree = "<group>"; };
+		52D84E9B1EE6B513002EDDFA /* HallStationNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallStationNotesViewController.h; sourceTree = "<group>"; };
+		52D84E9C1EE6B513002EDDFA /* HallStationNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallStationNotesViewController.m; sourceTree = "<group>"; };
+		52D84E9F1EE6BFA8002EDDFA /* LanternNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanternNumberViewController.h; sourceTree = "<group>"; };
+		52D84EA01EE6BFA8002EDDFA /* LanternNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanternNumberViewController.m; sourceTree = "<group>"; };
+		52D84EA21EE6C507002EDDFA /* LanternViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanternViewController.h; sourceTree = "<group>"; };
+		52D84EA31EE6C507002EDDFA /* LanternViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanternViewController.m; sourceTree = "<group>"; };
+		52D84EA51EE6C795002EDDFA /* LanternListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanternListViewController.h; sourceTree = "<group>"; };
+		52D84EA61EE6C796002EDDFA /* LanternListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanternListViewController.m; sourceTree = "<group>"; };
+		52E00EE41FAF452600F42899 /* EditLobbyListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditLobbyListViewController.h; sourceTree = "<group>"; };
+		52E00EE51FAF452600F42899 /* EditLobbyListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditLobbyListViewController.m; sourceTree = "<group>"; };
+		52E00EE71FAF479600F42899 /* EditListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditListViewCell.h; sourceTree = "<group>"; };
+		52E00EE81FAF479600F42899 /* EditListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditListViewCell.m; sourceTree = "<group>"; };
+		52E00EEE1FAF631400F42899 /* DeleteItemConfirmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteItemConfirmView.h; sourceTree = "<group>"; };
+		52E00EEF1FAF631400F42899 /* DeleteItemConfirmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteItemConfirmView.m; sourceTree = "<group>"; };
+		52E00EF01FAF631400F42899 /* DeleteItemConfirmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteItemConfirmView.xib; sourceTree = "<group>"; };
+		52E00EF31FAF784100F42899 /* EditBankListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBankListViewController.h; sourceTree = "<group>"; };
+		52E00EF41FAF784100F42899 /* EditBankListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBankListViewController.m; sourceTree = "<group>"; };
+		52E01D711EE10282000C3108 /* MADInfoAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADInfoAlert.h; sourceTree = "<group>"; };
+		52E01D721EE10282000C3108 /* MADInfoAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADInfoAlert.m; sourceTree = "<group>"; };
+		52E01D741EE1029E000C3108 /* MADInfoAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MADInfoAlert.xib; sourceTree = "<group>"; };
+		52E20EC21EDCDFE7000FA6A4 /* MADMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADMainCell.h; sourceTree = "<group>"; };
+		52E20EC31EDCDFE7000FA6A4 /* MADMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADMainCell.m; sourceTree = "<group>"; };
+		52E20EC71EDCE024000FA6A4 /* MADNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADNavigationView.h; sourceTree = "<group>"; };
+		52E20EC81EDCE024000FA6A4 /* MADNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADNavigationView.m; sourceTree = "<group>"; };
+		52E20ECA1EDCE039000FA6A4 /* MADNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MADNavigationView.xib; sourceTree = "<group>"; };
+		52EB46F51EE03AD600BC9883 /* SubmitProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitProjectViewController.h; sourceTree = "<group>"; };
+		52EB46F61EE03AD600BC9883 /* SubmitProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitProjectViewController.m; sourceTree = "<group>"; };
+		52EBCF6D1FCB07FC00E2D524 /* HallEntranceSkipRestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallEntranceSkipRestViewController.h; sourceTree = "<group>"; };
+		52EBCF6E1FCB07FC00E2D524 /* HallEntranceSkipRestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallEntranceSkipRestViewController.m; sourceTree = "<group>"; };
+		52EBCF701FCB123E00E2D524 /* SkipRestConfirmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkipRestConfirmView.h; sourceTree = "<group>"; };
+		52EBCF711FCB123E00E2D524 /* SkipRestConfirmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkipRestConfirmView.m; sourceTree = "<group>"; };
+		52EBCF721FCB123E00E2D524 /* SkipRestConfirmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkipRestConfirmView.xib; sourceTree = "<group>"; };
+		52EBCF751FCB15AD00E2D524 /* MADSurvey 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MADSurvey 4.xcdatamodel"; sourceTree = "<group>"; };
+		52F195FB1FEAE2B200349608 /* NSString+Double.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Double.h"; sourceTree = "<group>"; };
+		52F195FC1FEAE2B200349608 /* NSString+Double.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Double.m"; sourceTree = "<group>"; };
+		52F82F271EFB88820052DDFE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		52F91AB61EF13B89004B6F75 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		52F91AB71EF13B89004B6F75 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		521B69F11ED850450059DCBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F82F291EFB88B70052DDFE /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		521885701EE6F95500C1DFD0 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				521885711EE6F97300C1DFD0 /* CarDescriptionViewController.h */,
+				521885721EE6F97300C1DFD0 /* CarDescriptionViewController.m */,
+				521885741EE6F98700C1DFD0 /* CarLicenseViewController.h */,
+				521885751EE6F98700C1DFD0 /* CarLicenseViewController.m */,
+				521885771EE6F9C400C1DFD0 /* CarTypeViewController.h */,
+				521885781EE6F9C400C1DFD0 /* CarTypeViewController.m */,
+				5218857A1EE6F9E000C1DFD0 /* CarBackdoorViewController.h */,
+				5218857B1EE6F9E000C1DFD0 /* CarBackdoorViewController.m */,
+				5218857D1EE6FA0100C1DFD0 /* CarDoorCoincidingViewController.h */,
+				5218857E1EE6FA0100C1DFD0 /* CarDoorCoincidingViewController.m */,
+				521885801EE6FA1600C1DFD0 /* CarPushButtonsViewController.h */,
+				521885811EE6FA1600C1DFD0 /* CarPushButtonsViewController.m */,
+				521885831EE6FA2D00C1DFD0 /* CarDoorMeasurementsViewController.h */,
+				521885841EE6FA2D00C1DFD0 /* CarDoorMeasurementsViewController.m */,
+				521885861EE6FA4000C1DFD0 /* CarHandrailViewController.h */,
+				521885871EE6FA4000C1DFD0 /* CarHandrailViewController.m */,
+				521885891EE6FA5900C1DFD0 /* CarMeasurementsViewController.h */,
+				5218858A1EE6FA5A00C1DFD0 /* CarMeasurementsViewController.m */,
+				5218858C1EE6FA7100C1DFD0 /* CarNotesViewController.h */,
+				5218858D1EE6FA7100C1DFD0 /* CarNotesViewController.m */,
+				5218858F1EE6FA8400C1DFD0 /* CarPhotosViewController.h */,
+				521885901EE6FA8400C1DFD0 /* CarPhotosViewController.m */,
+				52D7D3CA1FAFD5CB0002DF72 /* EditCarListViewController.h */,
+				52D7D3CB1FAFD5CB0002DF72 /* EditCarListViewController.m */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		521B69EB1ED850450059DCBC = {
+			isa = PBXGroup;
+			children = (
+				521B69F61ED850460059DCBC /* MADSurvey */,
+				521B69F51ED850460059DCBC /* Products */,
+				52F82F261EFB88810052DDFE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		521B69F51ED850460059DCBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				521B69F41ED850460059DCBC /* MADSurvey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		521B69F61ED850460059DCBC /* MADSurvey */ = {
+			isa = PBXGroup;
+			children = (
+				52D378961EDBE0E800678331 /* Classes */,
+				521B69FA1ED850460059DCBC /* AppDelegate.h */,
+				521B69FB1ED850460059DCBC /* AppDelegate.m */,
+				521B69FD1ED850460059DCBC /* ViewController.h */,
+				521B69FE1ED850460059DCBC /* ViewController.m */,
+				521B6A001ED850460059DCBC /* Main.storyboard */,
+				52AB44181EE8574100E6F4F8 /* Second.storyboard */,
+				521B6A061ED850460059DCBC /* Assets.xcassets */,
+				521B6A081ED850460059DCBC /* LaunchScreen.storyboard */,
+				521B6A0B1ED850460059DCBC /* Info.plist */,
+				521B6A031ED850460059DCBC /* MADSurvey.xcdatamodeld */,
+				521B69F71ED850460059DCBC /* Supporting Files */,
+			);
+			path = MADSurvey;
+			sourceTree = "<group>";
+		};
+		521B69F71ED850460059DCBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				521B69F81ED850460059DCBC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		525B9D651F0544B400B7FB0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5274E3871F0643D700B6867B /* DataManager.h */,
+				5274E3881F0643D700B6867B /* DataManager.m */,
+				52450D151F2957B700DBA408 /* Settings.h */,
+				52450D161F2957B700DBA408 /* Settings.m */,
+				525B9DA81F05484100B7FB0F /* CoreData */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		525B9DA81F05484100B7FB0F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				524C0F8C1F1B64B30016D0E5 /* Cop+CoreDataClass.h */,
+				524C0F8D1F1B64B30016D0E5 /* Cop+CoreDataClass.m */,
+				524C0F8E1F1B64B30016D0E5 /* Cop+CoreDataProperties.h */,
+				524C0F8F1F1B64B30016D0E5 /* Cop+CoreDataProperties.m */,
+				524C0F901F1B64B30016D0E5 /* InteriorCarDoor+CoreDataClass.h */,
+				524C0F911F1B64B30016D0E5 /* InteriorCarDoor+CoreDataClass.m */,
+				524C0F921F1B64B30016D0E5 /* InteriorCarDoor+CoreDataProperties.h */,
+				524C0F931F1B64B30016D0E5 /* InteriorCarDoor+CoreDataProperties.m */,
+				524C0F941F1B64B30016D0E5 /* Lantern+CoreDataClass.h */,
+				524C0F951F1B64B30016D0E5 /* Lantern+CoreDataClass.m */,
+				524C0F961F1B64B30016D0E5 /* Lantern+CoreDataProperties.h */,
+				524C0F971F1B64B30016D0E5 /* Lantern+CoreDataProperties.m */,
+				524C0F981F1B64B30016D0E5 /* Lobby+CoreDataClass.h */,
+				524C0F991F1B64B30016D0E5 /* Lobby+CoreDataClass.m */,
+				524C0F9A1F1B64B30016D0E5 /* Lobby+CoreDataProperties.h */,
+				524C0F9B1F1B64B30016D0E5 /* Lobby+CoreDataProperties.m */,
+				524C0F9C1F1B64B30016D0E5 /* HallStation+CoreDataClass.h */,
+				524C0F9D1F1B64B40016D0E5 /* HallStation+CoreDataClass.m */,
+				524C0F9E1F1B64B40016D0E5 /* HallStation+CoreDataProperties.h */,
+				524C0F9F1F1B64B40016D0E5 /* HallStation+CoreDataProperties.m */,
+				524C0FA01F1B64B40016D0E5 /* Photo+CoreDataClass.h */,
+				524C0FA11F1B64B40016D0E5 /* Photo+CoreDataClass.m */,
+				524C0FA21F1B64B40016D0E5 /* Photo+CoreDataProperties.h */,
+				524C0FA31F1B64B40016D0E5 /* Photo+CoreDataProperties.m */,
+				524C0FA41F1B64B40016D0E5 /* Project+CoreDataClass.h */,
+				524C0FA51F1B64B40016D0E5 /* Project+CoreDataClass.m */,
+				524C0FA61F1B64B40016D0E5 /* Project+CoreDataProperties.h */,
+				524C0FA71F1B64B40016D0E5 /* Project+CoreDataProperties.m */,
+				524C0FA81F1B64B40016D0E5 /* Bank+CoreDataClass.h */,
+				524C0FA91F1B64B40016D0E5 /* Bank+CoreDataClass.m */,
+				524C0FAA1F1B64B40016D0E5 /* Bank+CoreDataProperties.h */,
+				524C0FAB1F1B64B40016D0E5 /* Bank+CoreDataProperties.m */,
+				524C0FAC1F1B64B40016D0E5 /* HallEntrance+CoreDataClass.h */,
+				524C0FAD1F1B64B40016D0E5 /* HallEntrance+CoreDataClass.m */,
+				524C0FAE1F1B64B40016D0E5 /* HallEntrance+CoreDataProperties.h */,
+				524C0FAF1F1B64B40016D0E5 /* HallEntrance+CoreDataProperties.m */,
+				524C0FB01F1B64B40016D0E5 /* Car+CoreDataClass.h */,
+				524C0FB11F1B64B40016D0E5 /* Car+CoreDataClass.m */,
+				524C0FB21F1B64B40016D0E5 /* Car+CoreDataProperties.h */,
+				524C0FB31F1B64B40016D0E5 /* Car+CoreDataProperties.m */,
+				524C0FB41F1B64B40016D0E5 /* InteriorCar+CoreDataClass.h */,
+				524C0FB51F1B64B40016D0E5 /* InteriorCar+CoreDataClass.m */,
+				524C0FB61F1B64B40016D0E5 /* InteriorCar+CoreDataProperties.h */,
+				524C0FB71F1B64B40016D0E5 /* InteriorCar+CoreDataProperties.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		52AB43321EE84DBE00E6F4F8 /* Bank */ = {
+			isa = PBXGroup;
+			children = (
+				52AB43331EE84DBE00E6F4F8 /* BankNameViewController.h */,
+				52AB43341EE84DBE00E6F4F8 /* BankNameViewController.m */,
+				52AB43351EE84DBE00E6F4F8 /* BankNotesViewController.h */,
+				52AB43361EE84DBE00E6F4F8 /* BankNotesViewController.m */,
+				52AB43371EE84DBE00E6F4F8 /* BankNumberCarsViewController.h */,
+				52AB43381EE84DBE00E6F4F8 /* BankNumberCarsViewController.m */,
+				52AB43391EE84DBE00E6F4F8 /* BankNumberRisersViewController.h */,
+				52AB433A1EE84DBE00E6F4F8 /* BankNumberRisersViewController.m */,
+				52AB433B1EE84DBE00E6F4F8 /* BankPhotosViewController.h */,
+				52AB433C1EE84DBE00E6F4F8 /* BankPhotosViewController.m */,
+				52E00EF31FAF784100F42899 /* EditBankListViewController.h */,
+				52E00EF41FAF784100F42899 /* EditBankListViewController.m */,
+			);
+			path = Bank;
+			sourceTree = "<group>";
+		};
+		52AB433D1EE84DBE00E6F4F8 /* Hall Entrance */ = {
+			isa = PBXGroup;
+			children = (
+				52AB433E1EE84DBE00E6F4F8 /* FinalViewController.h */,
+				52AB433F1EE84DBE00E6F4F8 /* FinalViewController.m */,
+				5280AB951FCB45D1004605BA /* HallEntranceViewController.h */,
+				5280AB961FCB45D1004605BA /* HallEntranceViewController.m */,
+				5280AB981FCB4B5D004605BA /* HallEntranceExistingListViewController.h */,
+				5280AB991FCB4B5D004605BA /* HallEntranceExistingListViewController.m */,
+				52AB43401EE84DBE00E6F4F8 /* HallEntranceDoorTypeViewController.h */,
+				52AB43411EE84DBE00E6F4F8 /* HallEntranceDoorTypeViewController.m */,
+				52AB43441EE84DBE00E6F4F8 /* HallInstranceTransomMeasurement1sViewController.h */,
+				52AB43451EE84DBE00E6F4F8 /* HallInstranceTransomMeasurement1sViewController.m */,
+				52AB43461EE84DBE00E6F4F8 /* HallInstranceTransomMeasurementCenterViewController.h */,
+				52AB43471EE84DBE00E6F4F8 /* HallInstranceTransomMeasurementCenterViewController.m */,
+				52AB43481EE84DBE00E6F4F8 /* HallInstranseTransomMeasurement2sViewController.h */,
+				52AB43491EE84DBE00E6F4F8 /* HallInstranseTransomMeasurement2sViewController.m */,
+				52AB434A1EE84DBE00E6F4F8 /* HallIntranceDoorOpeningDirectionViewController.h */,
+				52AB434B1EE84DBE00E6F4F8 /* HallIntranceDoorOpeningDirectionViewController.m */,
+				52AB434C1EE84DBE00E6F4F8 /* HallIntranceFrontReturnMeasurementViewController.h */,
+				52AB434D1EE84DBE00E6F4F8 /* HallIntranceFrontReturnMeasurementViewController.m */,
+				52AB434E1EE84DBE00E6F4F8 /* HallIntranceNotesViewController.h */,
+				52AB434F1EE84DBE00E6F4F8 /* HallIntranceNotesViewController.m */,
+				52AB43421EE84DBE00E6F4F8 /* HallEntrancePhotosViewController.h */,
+				52AB43431EE84DBE00E6F4F8 /* HallEntrancePhotosViewController.m */,
+				52EBCF6D1FCB07FC00E2D524 /* HallEntranceSkipRestViewController.h */,
+				52EBCF6E1FCB07FC00E2D524 /* HallEntranceSkipRestViewController.m */,
+				52AB43501EE84DBE00E6F4F8 /* ReviewViewController.h */,
+				52AB43511EE84DBE00E6F4F8 /* ReviewViewController.m */,
+				52D7D3D01FAFE4840002DF72 /* EditHallEntranceListViewController.h */,
+				52D7D3D11FAFE4840002DF72 /* EditHallEntranceListViewController.m */,
+			);
+			path = "Hall Entrance";
+			sourceTree = "<group>";
+		};
+		52AB43521EE84DBE00E6F4F8 /* Interior */ = {
+			isa = PBXGroup;
+			children = (
+				526E282F1F0F9F3700A8FD8B /* InteriorCarCountViewController.h */,
+				526E28301F0F9F3700A8FD8B /* InteriorCarCountViewController.m */,
+				52AB43611EE84DBE00E6F4F8 /* InteriorCarDescriptionViewController.h */,
+				52AB43621EE84DBE00E6F4F8 /* InteriorCarDescriptionViewController.m */,
+				52AB436B1EE84DBE00E6F4F8 /* InteriorCarLicenceViewController.h */,
+				52AB436C1EE84DBE00E6F4F8 /* InteriorCarLicenceViewController.m */,
+				5280AB6F1FCA99F9004605BA /* InteriorCarCopyViewController.h */,
+				5280AB701FCA99F9004605BA /* InteriorCarCopyViewController.m */,
+				5280AB721FCAA21A004605BA /* InteriorCarExistingListViewController.h */,
+				5280AB731FCAA21A004605BA /* InteriorCarExistingListViewController.m */,
+				52AB43531EE84DBE00E6F4F8 /* InteriorCarBackDoorViewController.h */,
+				52AB43541EE84DBE00E6F4F8 /* InteriorCarBackDoorViewController.m */,
+				52AB43651EE84DBE00E6F4F8 /* InteriorCarFlooringViewController.h */,
+				52AB43661EE84DBE00E6F4F8 /* InteriorCarFlooringViewController.m */,
+				52AB43831EE84DBE00E6F4F8 /* InteriorCarTillerCoverViewController.h */,
+				52AB43841EE84DBE00E6F4F8 /* InteriorCarTillerCoverViewController.m */,
+				52AB43631EE84DBE00E6F4F8 /* InteriorCarFloorHeightViewController.h */,
+				52AB43641EE84DBE00E6F4F8 /* InteriorCarFloorHeightViewController.m */,
+				52AB43591EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanViewController.h */,
+				52AB435A1EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanViewController.m */,
+				52AB43571EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanLocationViewController.h */,
+				52AB43581EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanLocationViewController.m */,
+				52AB435B1EE84DBE00E6F4F8 /* InteriorCarCeilingFrameTypeViewController.h */,
+				52AB435C1EE84DBE00E6F4F8 /* InteriorCarCeilingFrameTypeViewController.m */,
+				52AB43551EE84DBE00E6F4F8 /* InteriorCarCeilingEscapeHatchLocationViewController.h */,
+				52AB43561EE84DBE00E6F4F8 /* InteriorCarCeilingEscapeHatchLocationViewController.m */,
+				52AB43851EE84DBE00E6F4F8 /* InteriorCarTypeViewController.h */,
+				52AB43861EE84DBE00E6F4F8 /* InteriorCarTypeViewController.m */,
+				52AB43811EE84DBE00E6F4F8 /* InteriorCarStructureViewController.h */,
+				52AB43821EE84DBE00E6F4F8 /* InteriorCarStructureViewController.m */,
+				5280AB751FCAB3DE004605BA /* InteriorCarWallTypeViewController.h */,
+				5280AB761FCAB3DE004605BA /* InteriorCarWallTypeViewController.m */,
+				52AB436F1EE84DBE00E6F4F8 /* InteriorCarOpeningViewController.h */,
+				52AB43701EE84DBE00E6F4F8 /* InteriorCarOpeningViewController.m */,
+				52AB436D1EE84DBE00E6F4F8 /* InteriorCarMeasurementViewController.h */,
+				52AB436E1EE84DBE00E6F4F8 /* InteriorCarMeasurementViewController.m */,
+				52AB43691EE84DBE00E6F4F8 /* InteriorCarFrontReturnTypeViewController.h */,
+				52AB436A1EE84DBE00E6F4F8 /* InteriorCarFrontReturnTypeViewController.m */,
+				52AB43711EE84DBE00E6F4F8 /* InteriorCarSignleSideMeasurementViewController.h */,
+				52AB43721EE84DBE00E6F4F8 /* InteriorCarSignleSideMeasurementViewController.m */,
+				52AB43731EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsAViewController.h */,
+				52AB43741EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsAViewController.m */,
+				52AB43751EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsBViewController.h */,
+				52AB43761EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsBViewController.m */,
+				52AB435D1EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsAViewController.h */,
+				52AB435E1EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsAViewController.m */,
+				52AB435F1EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsBViewController.h */,
+				52AB43601EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsBViewController.m */,
+				52AB43671EE84DBE00E6F4F8 /* InteriorCarFrontReturnMeasurementsOtherViewController.h */,
+				52AB43681EE84DBE00E6F4F8 /* InteriorCarFrontReturnMeasurementsOtherViewController.m */,
+				52AB437F1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeViewController.h */,
+				52AB43801EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeViewController.m */,
+				52AB43791EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeAViewController.h */,
+				52AB437A1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeAViewController.m */,
+				52AB437B1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeBViewController.h */,
+				52AB437C1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeBViewController.m */,
+				52AB437D1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeCViewController.h */,
+				52AB437E1EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeCViewController.m */,
+				52AB43771EE84DBE00E6F4F8 /* InteriorCarSlamPostOtherViewController.h */,
+				52AB43781EE84DBE00E6F4F8 /* InteriorCarSlamPostOtherViewController.m */,
+				52D7D3CD1FAFDD680002DF72 /* EditInteriorCarListViewController.h */,
+				52D7D3CE1FAFDD680002DF72 /* EditInteriorCarListViewController.m */,
+			);
+			path = Interior;
+			sourceTree = "<group>";
+		};
+		52AB43871EE84DBE00E6F4F8 /* Interior Transom */ = {
+			isa = PBXGroup;
+			children = (
+				52AB43921EE84DBE00E6F4F8 /* InteriorCarDoorTypeViewController.h */,
+				52AB43931EE84DBE00E6F4F8 /* InteriorCarDoorTypeViewController.m */,
+				52AB43901EE84DBE00E6F4F8 /* InteriorCarDoorOpeningDirectionViewController.h */,
+				52AB43911EE84DBE00E6F4F8 /* InteriorCarDoorOpeningDirectionViewController.m */,
+				52AB43961EE84DBE00E6F4F8 /* InteriorCarTransom1sViewController.h */,
+				52AB43971EE84DBE00E6F4F8 /* InteriorCarTransom1sViewController.m */,
+				52AB43981EE84DBE00E6F4F8 /* InteriorCarTransom2sViewController.h */,
+				52AB43991EE84DBE00E6F4F8 /* InteriorCarTransom2sViewController.m */,
+				52AB439E1EE84DBE00E6F4F8 /* InteriorCarTransomProfile1sViewController.h */,
+				52AB439F1EE84DBE00E6F4F8 /* InteriorCarTransomProfile1sViewController.m */,
+				52AB43A01EE84DBE00E6F4F8 /* InteriorCarTransomProfile2sViewController.h */,
+				52AB43A11EE84DBE00E6F4F8 /* InteriorCarTransomProfile2sViewController.m */,
+				5280AB851FCACE42004605BA /* InteriorCarLTransomViewController.h */,
+				5280AB861FCACE42004605BA /* InteriorCarLTransomViewController.m */,
+				5280AB881FCACE57004605BA /* InteriorCarHeaderViewController.h */,
+				5280AB891FCACE57004605BA /* InteriorCarHeaderViewController.m */,
+				5280AB8B1FCACE79004605BA /* InteriorCarFlatViewController.h */,
+				5280AB8C1FCACE79004605BA /* InteriorCarFlatViewController.m */,
+				52AB438E1EE84DBE00E6F4F8 /* InteriorCarCopInstalledViewController.h */,
+				52AB438F1EE84DBE00E6F4F8 /* InteriorCarCopInstalledViewController.m */,
+				52AB43941EE84DBE00E6F4F8 /* InteriorCarMainCopReturnViewController.h */,
+				52AB43951EE84DBE00E6F4F8 /* InteriorCarMainCopReturnViewController.m */,
+				52AB43881EE84DBE00E6F4F8 /* InteriorCarAuxCopReturnViewController.h */,
+				52AB43891EE84DBE00E6F4F8 /* InteriorCarAuxCopReturnViewController.m */,
+				52AB439A1EE84DBE00E6F4F8 /* InteriorCarTransomNotesViewController.h */,
+				52AB439B1EE84DBE00E6F4F8 /* InteriorCarTransomNotesViewController.m */,
+				52AB439C1EE84DBE00E6F4F8 /* InteriorCarTransomPhotosViewController.h */,
+				52AB439D1EE84DBE00E6F4F8 /* InteriorCarTransomPhotosViewController.m */,
+				52AB438A1EE84DBE00E6F4F8 /* InteriorCarBackWallCloneViewController.h */,
+				52AB438B1EE84DBE00E6F4F8 /* InteriorCarBackWallCloneViewController.m */,
+				52AB438C1EE84DBE00E6F4F8 /* InteriorCarBackWallViewController.h */,
+				52AB438D1EE84DBE00E6F4F8 /* InteriorCarBackWallViewController.m */,
+			);
+			path = "Interior Transom";
+			sourceTree = "<group>";
+		};
+		52AB43A21EE84DBE00E6F4F8 /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				52AB43A31EE84DBE00E6F4F8 /* LobbyFeaturesViewController.h */,
+				52AB43A41EE84DBE00E6F4F8 /* LobbyFeaturesViewController.m */,
+				52AB43A51EE84DBE00E6F4F8 /* LobbyLocationViewController.h */,
+				52AB43A61EE84DBE00E6F4F8 /* LobbyLocationViewController.m */,
+				52AB43A71EE84DBE00E6F4F8 /* LobbyMeasurementViewController.h */,
+				52AB43A81EE84DBE00E6F4F8 /* LobbyMeasurementViewController.m */,
+				52AB43A91EE84DBE00E6F4F8 /* LobbyNotesViewController.h */,
+				52AB43AA1EE84DBE00E6F4F8 /* LobbyNotesViewController.m */,
+				52AB43AB1EE84DBE00E6F4F8 /* LobbyPhotosViewController.h */,
+				52AB43AC1EE84DBE00E6F4F8 /* LobbyPhotosViewController.m */,
+				52AB43AD1EE84DBE00E6F4F8 /* LobbyVisibilityViewController.h */,
+				52AB43AE1EE84DBE00E6F4F8 /* LobbyVisibilityViewController.m */,
+				52E00EE41FAF452600F42899 /* EditLobbyListViewController.h */,
+				52E00EE51FAF452600F42899 /* EditLobbyListViewController.m */,
+			);
+			path = Lobby;
+			sourceTree = "<group>";
+		};
+		52D378961EDBE0E800678331 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				525B9D651F0544B400B7FB0F /* Model */,
+				52D378C11EDC1C8D00678331 /* Shared */,
+				52D378C21EDC1C8D00678331 /* ViewControllers */,
+				52E20EBE1EDCDFE7000FA6A4 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		52D378C11EDC1C8D00678331 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5274E42F1F07C02300B6867B /* Common.h */,
+				5274E4301F07C02300B6867B /* Common.m */,
+				52D378CF1EDC1F0300678331 /* Constants.h */,
+				52D378CC1EDC1E1400678331 /* MADViewNagivator.h */,
+				52D378CD1EDC1E1400678331 /* MADViewNagivator.m */,
+				52F195FB1FEAE2B200349608 /* NSString+Double.h */,
+				52F195FC1FEAE2B200349608 /* NSString+Double.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		52D378C21EDC1C8D00678331 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				52AB43321EE84DBE00E6F4F8 /* Bank */,
+				52AB433D1EE84DBE00E6F4F8 /* Hall Entrance */,
+				52AB43521EE84DBE00E6F4F8 /* Interior */,
+				52AB43871EE84DBE00E6F4F8 /* Interior Transom */,
+				52AB43A21EE84DBE00E6F4F8 /* Lobby */,
+				52D3FA8C1EE7F4C2008EB624 /* CarSeparatePI */,
+				52D3FA661EE7F32E008EB624 /* CarCOP */,
+				52D3FA671EE7F32E008EB624 /* CarRidingLantern */,
+				521885701EE6F95500C1DFD0 /* Car */,
+				52D84E9E1EE6BF63002EDDFA /* LanternPI */,
+				52D6C4CE1EE3AB5E001C34CB /* HallStation */,
+				52D378D01EDC23D800678331 /* MADNavigationController.h */,
+				52D378D11EDC23D800678331 /* MADNavigationController.m */,
+				5296F0C61EDC459D00599688 /* MADMotherViewController.h */,
+				5296F0C71EDC459D00599688 /* MADMotherViewController.m */,
+				520DBE381EDE62EB0012C019 /* NewSurveyViewController.h */,
+				520DBE391EDE62EB0012C019 /* NewSurveyViewController.m */,
+				52CDECCE1EDFC226005F7F0C /* ExistingSurveysViewController.h */,
+				52CDECCF1EDFC226005F7F0C /* ExistingSurveysViewController.m */,
+				5278D0781FADE2AD00998BBA /* ProjectEditViewController.h */,
+				5278D0791FADE2AD00998BBA /* ProjectEditViewController.m */,
+				52CDECD41EDFD4B1005F7F0C /* SettingsViewController.h */,
+				52CDECD51EDFD4B1005F7F0C /* SettingsViewController.m */,
+				5279D9B11EE159C600456C85 /* ProjectPhotosViewController.h */,
+				5279D9B21EE159C600456C85 /* ProjectPhotosViewController.m */,
+				52EB46F51EE03AD600BC9883 /* SubmitProjectViewController.h */,
+				52EB46F61EE03AD600BC9883 /* SubmitProjectViewController.m */,
+				5279D9B61EE15AC700456C85 /* ProjectItemsToSurveyViewController.h */,
+				5279D9B71EE15AC700456C85 /* ProjectItemsToSurveyViewController.m */,
+				5279D9B81EE15AC700456C85 /* ProjectJpbTypeViewController.h */,
+				5279D9B91EE15AC700456C85 /* ProjectJpbTypeViewController.m */,
+				5279D9BA1EE15AC700456C85 /* ProjectNotesViewController.h */,
+				5279D9BB1EE15AC700456C85 /* ProjectNotesViewController.m */,
+				5279D9BC1EE15AC700456C85 /* ProjectNumberBanksViewController.h */,
+				5279D9BD1EE15AC700456C85 /* ProjectNumberBanksViewController.m */,
+				5279D9BE1EE15AC700456C85 /* ProjectNumberFloorsViewController.h */,
+				5279D9BF1EE15AC700456C85 /* ProjectNumberFloorsViewController.m */,
+				5279D9C01EE15AC700456C85 /* ProjectNumberLobbyPanelsViewController.h */,
+				5279D9C11EE15AC700456C85 /* ProjectNumberLobbyPanelsViewController.m */,
+				52D6C4CB1EE3A5F3001C34CB /* FloorDescriptionViewController.h */,
+				52D6C4CC1EE3A5F3001C34CB /* FloorDescriptionViewController.m */,
+				52F91AB61EF13B89004B6F75 /* PhotosViewController.h */,
+				52F91AB71EF13B89004B6F75 /* PhotosViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		52D3FA661EE7F32E008EB624 /* CarCOP */ = {
+			isa = PBXGroup;
+			children = (
+				52D3FA681EE7F353008EB624 /* CarCopNumberViewController.h */,
+				52D3FA691EE7F353008EB624 /* CarCopNumberViewController.m */,
+				52D3FA6B1EE7F393008EB624 /* CarCopNameViewController.h */,
+				52D3FA6C1EE7F393008EB624 /* CarCopNameViewController.m */,
+				52D3FA6E1EE7F3B7008EB624 /* CarCopStyleViewController.h */,
+				52D3FA6F1EE7F3B7008EB624 /* CarCopStyleViewController.m */,
+				52D3FA711EE7F3D6008EB624 /* CarCopAppliedMeasurementsViewController.h */,
+				52D3FA721EE7F3D6008EB624 /* CarCopAppliedMeasurementsViewController.m */,
+				52D3FA741EE7F3EA008EB624 /* CarCopSwingMeasurementsViewController.h */,
+				52D3FA751EE7F3EA008EB624 /* CarCopSwingMeasurementsViewController.m */,
+				52D3FA771EE7F3FB008EB624 /* CarCopNotesViewController.h */,
+				52D3FA781EE7F3FB008EB624 /* CarCopNotesViewController.m */,
+				52D3FA7A1EE7F413008EB624 /* CarCopPhotosViewController.h */,
+				52D3FA7B1EE7F413008EB624 /* CarCopPhotosViewController.m */,
+			);
+			path = CarCOP;
+			sourceTree = "<group>";
+		};
+		52D3FA671EE7F32E008EB624 /* CarRidingLantern */ = {
+			isa = PBXGroup;
+			children = (
+				52D3FA7D1EE7F43E008EB624 /* CarRidingLanternViewController.h */,
+				52D3FA7E1EE7F43E008EB624 /* CarRidingLanternViewController.m */,
+				52D3FA801EE7F450008EB624 /* CarRidingLanternMountingViewController.h */,
+				52D3FA811EE7F450008EB624 /* CarRidingLanternMountingViewController.m */,
+				52D3FA831EE7F464008EB624 /* CarRidingLanternMeasurementsViewController.h */,
+				52D3FA841EE7F464008EB624 /* CarRidingLanternMeasurementsViewController.m */,
+				52D3FA861EE7F476008EB624 /* CarRidingLanternNotesViewController.h */,
+				52D3FA871EE7F476008EB624 /* CarRidingLanternNotesViewController.m */,
+				52D3FA891EE7F492008EB624 /* CarRidingLanternPhotosViewController.h */,
+				52D3FA8A1EE7F492008EB624 /* CarRidingLanternPhotosViewController.m */,
+			);
+			path = CarRidingLantern;
+			sourceTree = "<group>";
+		};
+		52D3FA8C1EE7F4C2008EB624 /* CarSeparatePI */ = {
+			isa = PBXGroup;
+			children = (
+				52D3FA8D1EE7F4D6008EB624 /* CarSeparatePIViewController.h */,
+				52D3FA8E1EE7F4D6008EB624 /* CarSeparatePIViewController.m */,
+				52D3FA901EE7F4EC008EB624 /* CarSeparatePIMountingViewController.h */,
+				52D3FA911EE7F4EC008EB624 /* CarSeparatePIMountingViewController.m */,
+				52D3FA931EE7F504008EB624 /* CarSeparatePIMeasurementsViewController.h */,
+				52D3FA941EE7F504008EB624 /* CarSeparatePIMeasurementsViewController.m */,
+				52D3FA961EE7F517008EB624 /* CarSeparatePINotesViewController.h */,
+				52D3FA971EE7F517008EB624 /* CarSeparatePINotesViewController.m */,
+				52D3FA991EE7F528008EB624 /* CarSeparatePIPhotosViewController.h */,
+				52D3FA9A1EE7F528008EB624 /* CarSeparatePIPhotosViewController.m */,
+			);
+			path = CarSeparatePI;
+			sourceTree = "<group>";
+		};
+		52D6C4CE1EE3AB5E001C34CB /* HallStation */ = {
+			isa = PBXGroup;
+			children = (
+				52D6C4CF1EE3B6E2001C34CB /* HallStationViewController.h */,
+				52D6C4D01EE3B6E2001C34CB /* HallStationViewController.m */,
+				52D6C4D21EE3BC15001C34CB /* HallStationListViewController.h */,
+				52D6C4D31EE3BC15001C34CB /* HallStationListViewController.m */,
+				5297B9591EE40CFB00255FE4 /* HallStationSameAsMeasurementsViewController.h */,
+				5297B95A1EE40CFB00255FE4 /* HallStationSameAsMeasurementsViewController.m */,
+				5297B95C1EE4145800255FE4 /* HallStationReviewViewController.h */,
+				5297B95D1EE4145800255FE4 /* HallStationReviewViewController.m */,
+				52D84E8F1EE69476002EDDFA /* HallStationDescriptionViewController.h */,
+				52D84E901EE69476002EDDFA /* HallStationDescriptionViewController.m */,
+				52D84E921EE69F9C002EDDFA /* HallStationMountingViewController.h */,
+				52D84E931EE69F9D002EDDFA /* HallStationMountingViewController.m */,
+				52D84E951EE6A507002EDDFA /* HallStationWallMaterialViewController.h */,
+				52D84E961EE6A507002EDDFA /* HallStationWallMaterialViewController.m */,
+				52D84E981EE6AEC9002EDDFA /* HallStationMeasurementViewController.h */,
+				52D84E991EE6AEC9002EDDFA /* HallStationMeasurementViewController.m */,
+				52D84E9B1EE6B513002EDDFA /* HallStationNotesViewController.h */,
+				52D84E9C1EE6B513002EDDFA /* HallStationNotesViewController.m */,
+				524E49891EE6E99900E6769A /* HallStationPhotosViewController.h */,
+				524E498A1EE6E99900E6769A /* HallStationPhotosViewController.m */,
+				52D7D3C41FAF860E0002DF72 /* EditHallStationListViewController.h */,
+				52D7D3C51FAF860E0002DF72 /* EditHallStationListViewController.m */,
+			);
+			path = HallStation;
+			sourceTree = "<group>";
+		};
+		52D84E9E1EE6BF63002EDDFA /* LanternPI */ = {
+			isa = PBXGroup;
+			children = (
+				52D84E9F1EE6BFA8002EDDFA /* LanternNumberViewController.h */,
+				52D84EA01EE6BFA8002EDDFA /* LanternNumberViewController.m */,
+				52D84EA21EE6C507002EDDFA /* LanternViewController.h */,
+				52D84EA31EE6C507002EDDFA /* LanternViewController.m */,
+				52D84EA51EE6C795002EDDFA /* LanternListViewController.h */,
+				52D84EA61EE6C796002EDDFA /* LanternListViewController.m */,
+				528139681EE6D6C900A1B7F8 /* LanternSameAsMeasurementViewController.h */,
+				528139691EE6D6C900A1B7F8 /* LanternSameAsMeasurementViewController.m */,
+				5281396B1EE6D6D900A1B7F8 /* LanternReviewViewController.h */,
+				5281396C1EE6D6D900A1B7F8 /* LanternReviewViewController.m */,
+				5281396E1EE6D6F100A1B7F8 /* LanternDescriptionViewController.h */,
+				5281396F1EE6D6F100A1B7F8 /* LanternDescriptionViewController.m */,
+				528139711EE6D6FC00A1B7F8 /* LanternMountingViewController.h */,
+				528139721EE6D6FC00A1B7F8 /* LanternMountingViewController.m */,
+				528139741EE6D70900A1B7F8 /* LanternWallMaterialViewController.h */,
+				528139751EE6D70900A1B7F8 /* LanternWallMaterialViewController.m */,
+				528139771EE6D72400A1B7F8 /* LanternMeasurementsViewController.h */,
+				528139781EE6D72400A1B7F8 /* LanternMeasurementsViewController.m */,
+				5281397A1EE6D73600A1B7F8 /* LanternNotesViewController.h */,
+				5281397B1EE6D73600A1B7F8 /* LanternNotesViewController.m */,
+				524E498C1EE6EBB900E6769A /* LanternPhotosViewController.h */,
+				524E498D1EE6EBB900E6769A /* LanternPhotosViewController.m */,
+				52D7D3C71FAFCB450002DF72 /* EditLanternListViewController.h */,
+				52D7D3C81FAFCB450002DF72 /* EditLanternListViewController.m */,
+			);
+			path = LanternPI;
+			sourceTree = "<group>";
+		};
+		52E20EBE1EDCDFE7000FA6A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5279D9C91EE15B2900456C85 /* CheckButton.h */,
+				5279D9CA1EE15B2900456C85 /* CheckButton.m */,
+				52E20EC71EDCE024000FA6A4 /* MADNavigationView.h */,
+				52E20EC81EDCE024000FA6A4 /* MADNavigationView.m */,
+				52E20ECA1EDCE039000FA6A4 /* MADNavigationView.xib */,
+				52E20EC21EDCDFE7000FA6A4 /* MADMainCell.h */,
+				52E20EC31EDCDFE7000FA6A4 /* MADMainCell.m */,
+				52CDECD11EDFC296005F7F0C /* ExistingSurveyCell.h */,
+				52CDECD21EDFC296005F7F0C /* ExistingSurveyCell.m */,
+				52CDECD71EDFD87F005F7F0C /* OptionButton.h */,
+				52CDECD81EDFD87F005F7F0C /* OptionButton.m */,
+				52E01D711EE10282000C3108 /* MADInfoAlert.h */,
+				52E01D721EE10282000C3108 /* MADInfoAlert.m */,
+				52E01D741EE1029E000C3108 /* MADInfoAlert.xib */,
+				520264D91FB20FA4005FAABC /* MADWarningAlert.h */,
+				520264DA1FB20FA4005FAABC /* MADWarningAlert.m */,
+				520264DB1FB20FA4005FAABC /* MADWarningAlert.xib */,
+				52CDECE21EDFF36B005F7F0C /* ExistingSurveyOperationsView.h */,
+				52CDECE31EDFF36B005F7F0C /* ExistingSurveyOperationsView.m */,
+				52CDECE51EDFF379005F7F0C /* ExistingSurveyOperationsView.xib */,
+				52CDECE71EE01185005F7F0C /* ExistingSurveyDeleteConfirmView.h */,
+				52CDECE81EE01185005F7F0C /* ExistingSurveyDeleteConfirmView.m */,
+				52CDECEA1EE01198005F7F0C /* ExistingSurveyDeleteConfirmView.xib */,
+				525161D91FA8126D00C55D0C /* StopSurveyConfirmView.h */,
+				525161DA1FA8126D00C55D0C /* StopSurveyConfirmView.m */,
+				525161DB1FA8126D00C55D0C /* StopSurveyConfirmView.xib */,
+				526393741FB0E3030028825D /* SubmitConfirmView.h */,
+				526393751FB0E3030028825D /* SubmitConfirmView.m */,
+				526393761FB0E3030028825D /* SubmitConfirmView.xib */,
+				5279D9CC1EE170B400456C85 /* PhotoSelectView.h */,
+				5279D9CD1EE170B400456C85 /* PhotoSelectView.m */,
+				5279D9CF1EE170C400456C85 /* PhotoSelectView.xib */,
+				52D84E8A1EE65968002EDDFA /* HelpView.h */,
+				52D84E8B1EE65968002EDDFA /* HelpView.m */,
+				52D84E8D1EE65976002EDDFA /* HelpView.xib */,
+				52D3FA9C1EE830DF008EB624 /* WeightSelectView.h */,
+				52D3FA9D1EE830DF008EB624 /* WeightSelectView.m */,
+				52D3FA9F1EE830EB008EB624 /* WeightSelectView.xib */,
+				52E00EEE1FAF631400F42899 /* DeleteItemConfirmView.h */,
+				52E00EEF1FAF631400F42899 /* DeleteItemConfirmView.m */,
+				52E00EF01FAF631400F42899 /* DeleteItemConfirmView.xib */,
+				52E00EE71FAF479600F42899 /* EditListViewCell.h */,
+				52E00EE81FAF479600F42899 /* EditListViewCell.m */,
+				520264D41FB2045B005FAABC /* MADWaitingView.h */,
+				520264D51FB2045B005FAABC /* MADWaitingView.m */,
+				520264D61FB2045B005FAABC /* MADWaitingView.xib */,
+				52EBCF701FCB123E00E2D524 /* SkipRestConfirmView.h */,
+				52EBCF711FCB123E00E2D524 /* SkipRestConfirmView.m */,
+				52EBCF721FCB123E00E2D524 /* SkipRestConfirmView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52F82F261EFB88810052DDFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52F82F271EFB88820052DDFE /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		521B69F31ED850450059DCBC /* MADSurvey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 521B6A0E1ED850460059DCBC /* Build configuration list for PBXNativeTarget "MADSurvey" */;
+			buildPhases = (
+				521B69F01ED850450059DCBC /* Sources */,
+				521B69F11ED850450059DCBC /* Frameworks */,
+				521B69F21ED850450059DCBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MADSurvey;
+			productName = MADSurvey;
+			productReference = 521B69F41ED850460059DCBC /* MADSurvey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		521B69EC1ED850450059DCBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = seniorcoder;
+				TargetAttributes = {
+					521B69F31ED850450059DCBC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 521B69EF1ED850450059DCBC /* Build configuration list for PBXProject "MADSurvey" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 521B69EB1ED850450059DCBC;
+			productRefGroup = 521B69F51ED850460059DCBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				521B69F31ED850450059DCBC /* MADSurvey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		521B69F21ED850450059DCBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CDECE61EDFF379005F7F0C /* ExistingSurveyOperationsView.xib in Resources */,
+				5279D9D01EE170C400456C85 /* PhotoSelectView.xib in Resources */,
+				52EBCF741FCB123E00E2D524 /* SkipRestConfirmView.xib in Resources */,
+				521B6A0A1ED850460059DCBC /* LaunchScreen.storyboard in Resources */,
+				52E20ECB1EDCE039000FA6A4 /* MADNavigationView.xib in Resources */,
+				520264DD1FB20FA4005FAABC /* MADWarningAlert.xib in Resources */,
+				521B6A071ED850460059DCBC /* Assets.xcassets in Resources */,
+				52D84E8E1EE65976002EDDFA /* HelpView.xib in Resources */,
+				52D3FAA01EE830EB008EB624 /* WeightSelectView.xib in Resources */,
+				521B6A021ED850460059DCBC /* Main.storyboard in Resources */,
+				52CDECEB1EE01198005F7F0C /* ExistingSurveyDeleteConfirmView.xib in Resources */,
+				520264D81FB2045B005FAABC /* MADWaitingView.xib in Resources */,
+				52E01D751EE1029E000C3108 /* MADInfoAlert.xib in Resources */,
+				52AB44191EE8574100E6F4F8 /* Second.storyboard in Resources */,
+				52E00EF21FAF631400F42899 /* DeleteItemConfirmView.xib in Resources */,
+				525161DD1FA8126D00C55D0C /* StopSurveyConfirmView.xib in Resources */,
+				526393781FB0E3030028825D /* SubmitConfirmView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		521B69F01ED850450059DCBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E00EF51FAF784100F42899 /* EditBankListViewController.m in Sources */,
+				5274E4311F07C02300B6867B /* Common.m in Sources */,
+				52AB43B11EE84DBE00E6F4F8 /* BankNumberCarsViewController.m in Sources */,
+				52D3FA7C1EE7F413008EB624 /* CarCopPhotosViewController.m in Sources */,
+				52AB43E11EE84DBE00E6F4F8 /* InteriorCarTransomNotesViewController.m in Sources */,
+				5280AB971FCB45D1004605BA /* HallEntranceViewController.m in Sources */,
+				52D378D21EDC23D800678331 /* MADNavigationController.m in Sources */,
+				525161DC1FA8126D00C55D0C /* StopSurveyConfirmView.m in Sources */,
+				52D3FA9B1EE7F528008EB624 /* CarSeparatePIPhotosViewController.m in Sources */,
+				5279D9B31EE159C600456C85 /* ProjectPhotosViewController.m in Sources */,
+				52AB43BC1EE84DBE00E6F4F8 /* HallIntranceNotesViewController.m in Sources */,
+				524C0FBA1F1B64B40016D0E5 /* InteriorCarDoor+CoreDataClass.m in Sources */,
+				52AB43B41EE84DBE00E6F4F8 /* FinalViewController.m in Sources */,
+				52AB43D91EE84DBE00E6F4F8 /* InteriorCarBackWallCloneViewController.m in Sources */,
+				5218858E1EE6FA7100C1DFD0 /* CarNotesViewController.m in Sources */,
+				52CDECE41EDFF36B005F7F0C /* ExistingSurveyOperationsView.m in Sources */,
+				52AB43E81EE84DBE00E6F4F8 /* LobbyNotesViewController.m in Sources */,
+				52AB43D81EE84DBE00E6F4F8 /* InteriorCarAuxCopReturnViewController.m in Sources */,
+				52AB43DE1EE84DBE00E6F4F8 /* InteriorCarMainCopReturnViewController.m in Sources */,
+				52D7D3D21FAFE4840002DF72 /* EditHallEntranceListViewController.m in Sources */,
+				524C0FCC1F1B64B50016D0E5 /* InteriorCar+CoreDataClass.m in Sources */,
+				524E498B1EE6E99900E6769A /* HallStationPhotosViewController.m in Sources */,
+				52D3FA951EE7F504008EB624 /* CarSeparatePIMeasurementsViewController.m in Sources */,
+				524C0FBE1F1B64B40016D0E5 /* Lobby+CoreDataClass.m in Sources */,
+				5280AB871FCACE42004605BA /* InteriorCarLTransomViewController.m in Sources */,
+				52AB43D51EE84DBE00E6F4F8 /* InteriorCarStructureViewController.m in Sources */,
+				52D378CE1EDC1E1400678331 /* MADViewNagivator.m in Sources */,
+				52AB43CD1EE84DBE00E6F4F8 /* InteriorCarSignleSideMeasurementViewController.m in Sources */,
+				52D3FA791EE7F3FB008EB624 /* CarCopNotesViewController.m in Sources */,
+				52AB43C31EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsAViewController.m in Sources */,
+				52D3FA7F1EE7F43E008EB624 /* CarRidingLanternViewController.m in Sources */,
+				52CDECE91EE01185005F7F0C /* ExistingSurveyDeleteConfirmView.m in Sources */,
+				52D3FA761EE7F3EA008EB624 /* CarCopSwingMeasurementsViewController.m in Sources */,
+				52AB43B21EE84DBE00E6F4F8 /* BankNumberRisersViewController.m in Sources */,
+				52AB43BB1EE84DBE00E6F4F8 /* HallIntranceFrontReturnMeasurementViewController.m in Sources */,
+				52AB43E21EE84DBE00E6F4F8 /* InteriorCarTransomPhotosViewController.m in Sources */,
+				524C0FCB1F1B64B50016D0E5 /* Car+CoreDataProperties.m in Sources */,
+				52D84E9D1EE6B513002EDDFA /* HallStationNotesViewController.m in Sources */,
+				528139731EE6D6FC00A1B7F8 /* LanternMountingViewController.m in Sources */,
+				52AB43B61EE84DBE00E6F4F8 /* HallEntrancePhotosViewController.m in Sources */,
+				5280AB741FCAA21A004605BA /* InteriorCarExistingListViewController.m in Sources */,
+				520264D71FB2045B005FAABC /* MADWaitingView.m in Sources */,
+				52AB43C41EE84DBE00E6F4F8 /* InteriorCarCenterReturnMeasurementsBViewController.m in Sources */,
+				528139761EE6D70900A1B7F8 /* LanternWallMaterialViewController.m in Sources */,
+				52D3FA9E1EE830DF008EB624 /* WeightSelectView.m in Sources */,
+				52AB43CA1EE84DBE00E6F4F8 /* InteriorCarLicenceViewController.m in Sources */,
+				52AB43CC1EE84DBE00E6F4F8 /* InteriorCarOpeningViewController.m in Sources */,
+				52D84E9A1EE6AEC9002EDDFA /* HallStationMeasurementViewController.m in Sources */,
+				52AB43DD1EE84DBE00E6F4F8 /* InteriorCarDoorTypeViewController.m in Sources */,
+				52D7D3CC1FAFD5CB0002DF72 /* EditCarListViewController.m in Sources */,
+				52AB43DB1EE84DBE00E6F4F8 /* InteriorCarCopInstalledViewController.m in Sources */,
+				520264DC1FB20FA4005FAABC /* MADWarningAlert.m in Sources */,
+				52AB43CB1EE84DBE00E6F4F8 /* InteriorCarMeasurementViewController.m in Sources */,
+				52D3FA731EE7F3D6008EB624 /* CarCopAppliedMeasurementsViewController.m in Sources */,
+				5280AB9A1FCB4B5D004605BA /* HallEntranceExistingListViewController.m in Sources */,
+				52D84E941EE69F9D002EDDFA /* HallStationMountingViewController.m in Sources */,
+				521B69FF1ED850460059DCBC /* ViewController.m in Sources */,
+				524C0FBF1F1B64B40016D0E5 /* Lobby+CoreDataProperties.m in Sources */,
+				526E28311F0F9F3700A8FD8B /* InteriorCarCountViewController.m in Sources */,
+				5281396A1EE6D6C900A1B7F8 /* LanternSameAsMeasurementViewController.m in Sources */,
+				52AB43BF1EE84DBE00E6F4F8 /* InteriorCarCeilingEscapeHatchLocationViewController.m in Sources */,
+				52D6C4D41EE3BC15001C34CB /* HallStationListViewController.m in Sources */,
+				52D84E8C1EE65968002EDDFA /* HelpView.m in Sources */,
+				521B69FC1ED850460059DCBC /* AppDelegate.m in Sources */,
+				52D3FA821EE7F450008EB624 /* CarRidingLanternMountingViewController.m in Sources */,
+				524C0FC41F1B64B50016D0E5 /* Project+CoreDataClass.m in Sources */,
+				5279D9C71EE15AC700456C85 /* ProjectNumberFloorsViewController.m in Sources */,
+				5279D9C61EE15AC700456C85 /* ProjectNumberBanksViewController.m in Sources */,
+				524E498E1EE6EBB900E6769A /* LanternPhotosViewController.m in Sources */,
+				52D3FA981EE7F517008EB624 /* CarSeparatePINotesViewController.m in Sources */,
+				52AB43D21EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeBViewController.m in Sources */,
+				5281397C1EE6D73600A1B7F8 /* LanternNotesViewController.m in Sources */,
+				52AB43DF1EE84DBE00E6F4F8 /* InteriorCarTransom1sViewController.m in Sources */,
+				52AB43E71EE84DBE00E6F4F8 /* LobbyMeasurementViewController.m in Sources */,
+				52E00EE91FAF479600F42899 /* EditListViewCell.m in Sources */,
+				52D3FA881EE7F476008EB624 /* CarRidingLanternNotesViewController.m in Sources */,
+				52AB43EA1EE84DBE00E6F4F8 /* LobbyVisibilityViewController.m in Sources */,
+				5280AB771FCAB3DE004605BA /* InteriorCarWallTypeViewController.m in Sources */,
+				528139701EE6D6F100A1B7F8 /* LanternDescriptionViewController.m in Sources */,
+				5280AB711FCA99F9004605BA /* InteriorCarCopyViewController.m in Sources */,
+				52CDECD31EDFC296005F7F0C /* ExistingSurveyCell.m in Sources */,
+				5278D07A1FADE2AD00998BBA /* ProjectEditViewController.m in Sources */,
+				52AB43C81EE84DBE00E6F4F8 /* InteriorCarFrontReturnMeasurementsOtherViewController.m in Sources */,
+				52D84E971EE6A507002EDDFA /* HallStationWallMaterialViewController.m in Sources */,
+				521B6A051ED850460059DCBC /* MADSurvey.xcdatamodeld in Sources */,
+				52CDECD61EDFD4B1005F7F0C /* SettingsViewController.m in Sources */,
+				52D3FA701EE7F3B7008EB624 /* CarCopStyleViewController.m in Sources */,
+				52EBCF6F1FCB07FC00E2D524 /* HallEntranceSkipRestViewController.m in Sources */,
+				5218857C1EE6F9E000C1DFD0 /* CarBackdoorViewController.m in Sources */,
+				526393771FB0E3030028825D /* SubmitConfirmView.m in Sources */,
+				52F195FD1FEAE2B200349608 /* NSString+Double.m in Sources */,
+				524C0FCA1F1B64B50016D0E5 /* Car+CoreDataClass.m in Sources */,
+				52E01D731EE10282000C3108 /* MADInfoAlert.m in Sources */,
+				524C0FC71F1B64B50016D0E5 /* Bank+CoreDataProperties.m in Sources */,
+				52AB43DC1EE84DBE00E6F4F8 /* InteriorCarDoorOpeningDirectionViewController.m in Sources */,
+				5218858B1EE6FA5A00C1DFD0 /* CarMeasurementsViewController.m in Sources */,
+				524C0FC81F1B64B50016D0E5 /* HallEntrance+CoreDataClass.m in Sources */,
+				52AB43B71EE84DBE00E6F4F8 /* HallInstranceTransomMeasurement1sViewController.m in Sources */,
+				521885911EE6FA8400C1DFD0 /* CarPhotosViewController.m in Sources */,
+				524C0FBC1F1B64B40016D0E5 /* Lantern+CoreDataClass.m in Sources */,
+				52AB43C51EE84DBE00E6F4F8 /* InteriorCarDescriptionViewController.m in Sources */,
+				524C0FBD1F1B64B40016D0E5 /* Lantern+CoreDataProperties.m in Sources */,
+				52D3FA851EE7F464008EB624 /* CarRidingLanternMeasurementsViewController.m in Sources */,
+				52F91AB81EF13B89004B6F75 /* PhotosViewController.m in Sources */,
+				521885851EE6FA2D00C1DFD0 /* CarDoorMeasurementsViewController.m in Sources */,
+				52AB43B81EE84DBE00E6F4F8 /* HallInstranceTransomMeasurementCenterViewController.m in Sources */,
+				521885761EE6F98700C1DFD0 /* CarLicenseViewController.m in Sources */,
+				52D84EA11EE6BFA8002EDDFA /* LanternNumberViewController.m in Sources */,
+				52D84EA71EE6C796002EDDFA /* LanternListViewController.m in Sources */,
+				52D7D3CF1FAFDD680002DF72 /* EditInteriorCarListViewController.m in Sources */,
+				52AB43E51EE84DBE00E6F4F8 /* LobbyFeaturesViewController.m in Sources */,
+				52AB43D71EE84DBE00E6F4F8 /* InteriorCarTypeViewController.m in Sources */,
+				528139791EE6D72400A1B7F8 /* LanternMeasurementsViewController.m in Sources */,
+				52AB43C61EE84DBE00E6F4F8 /* InteriorCarFloorHeightViewController.m in Sources */,
+				52E00EE61FAF452600F42899 /* EditLobbyListViewController.m in Sources */,
+				52AB43AF1EE84DBE00E6F4F8 /* BankNameViewController.m in Sources */,
+				52AB43C91EE84DBE00E6F4F8 /* InteriorCarFrontReturnTypeViewController.m in Sources */,
+				52D84EA41EE6C507002EDDFA /* LanternViewController.m in Sources */,
+				52D7D3C61FAF860E0002DF72 /* EditHallStationListViewController.m in Sources */,
+				52D3FA8B1EE7F492008EB624 /* CarRidingLanternPhotosViewController.m in Sources */,
+				524C0FB91F1B64B40016D0E5 /* Cop+CoreDataProperties.m in Sources */,
+				52AB43D11EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeAViewController.m in Sources */,
+				52AB43C11EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanViewController.m in Sources */,
+				520DBE3A1EDE62EB0012C019 /* NewSurveyViewController.m in Sources */,
+				52D3FA921EE7F4EC008EB624 /* CarSeparatePIMountingViewController.m in Sources */,
+				52AB43E01EE84DBE00E6F4F8 /* InteriorCarTransom2sViewController.m in Sources */,
+				52E20EC91EDCE024000FA6A4 /* MADNavigationView.m in Sources */,
+				5279D9CB1EE15B2900456C85 /* CheckButton.m in Sources */,
+				524C0FC21F1B64B40016D0E5 /* Photo+CoreDataClass.m in Sources */,
+				5279D9CE1EE170B400456C85 /* PhotoSelectView.m in Sources */,
+				521B69F91ED850460059DCBC /* main.m in Sources */,
+				52AB43DA1EE84DBE00E6F4F8 /* InteriorCarBackWallViewController.m in Sources */,
+				5280AB8D1FCACE79004605BA /* InteriorCarFlatViewController.m in Sources */,
+				5281396D1EE6D6D900A1B7F8 /* LanternReviewViewController.m in Sources */,
+				524C0FB81F1B64B40016D0E5 /* Cop+CoreDataClass.m in Sources */,
+				52CDECD91EDFD87F005F7F0C /* OptionButton.m in Sources */,
+				52AB43E61EE84DBE00E6F4F8 /* LobbyLocationViewController.m in Sources */,
+				52EBCF731FCB123E00E2D524 /* SkipRestConfirmView.m in Sources */,
+				52AB43D41EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeViewController.m in Sources */,
+				52AB43BE1EE84DBE00E6F4F8 /* InteriorCarBackDoorViewController.m in Sources */,
+				5280AB8A1FCACE57004605BA /* InteriorCarHeaderViewController.m in Sources */,
+				52AB43B51EE84DBE00E6F4F8 /* HallEntranceDoorTypeViewController.m in Sources */,
+				5279D9C31EE15AC700456C85 /* ProjectItemsToSurveyViewController.m in Sources */,
+				524C0FC31F1B64B40016D0E5 /* Photo+CoreDataProperties.m in Sources */,
+				52D3FA6D1EE7F393008EB624 /* CarCopNameViewController.m in Sources */,
+				52AB43D31EE84DBE00E6F4F8 /* InteriorCarSlamPostTypeCViewController.m in Sources */,
+				5279D9C41EE15AC700456C85 /* ProjectJpbTypeViewController.m in Sources */,
+				52AB43CE1EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsAViewController.m in Sources */,
+				52D6C4D11EE3B6E2001C34CB /* HallStationViewController.m in Sources */,
+				5296F0C81EDC459D00599688 /* MADMotherViewController.m in Sources */,
+				524C0FBB1F1B64B40016D0E5 /* InteriorCarDoor+CoreDataProperties.m in Sources */,
+				5218857F1EE6FA0100C1DFD0 /* CarDoorCoincidingViewController.m in Sources */,
+				524C0FC11F1B64B40016D0E5 /* HallStation+CoreDataProperties.m in Sources */,
+				52AB43B31EE84DBE00E6F4F8 /* BankPhotosViewController.m in Sources */,
+				52AB43C21EE84DBE00E6F4F8 /* InteriorCarCeilingFrameTypeViewController.m in Sources */,
+				52E20EC61EDCDFE7000FA6A4 /* MADMainCell.m in Sources */,
+				52D3FA6A1EE7F353008EB624 /* CarCopNumberViewController.m in Sources */,
+				524C0FCD1F1B64B50016D0E5 /* InteriorCar+CoreDataProperties.m in Sources */,
+				5297B95E1EE4145800255FE4 /* HallStationReviewViewController.m in Sources */,
+				52AB43E91EE84DBE00E6F4F8 /* LobbyPhotosViewController.m in Sources */,
+				52D3FA8F1EE7F4D6008EB624 /* CarSeparatePIViewController.m in Sources */,
+				52AB43E31EE84DBE00E6F4F8 /* InteriorCarTransomProfile1sViewController.m in Sources */,
+				52AB43E41EE84DBE00E6F4F8 /* InteriorCarTransomProfile2sViewController.m in Sources */,
+				52AB43BD1EE84DBE00E6F4F8 /* ReviewViewController.m in Sources */,
+				52D84E911EE69476002EDDFA /* HallStationDescriptionViewController.m in Sources */,
+				52CDECD01EDFC226005F7F0C /* ExistingSurveysViewController.m in Sources */,
+				521885731EE6F97300C1DFD0 /* CarDescriptionViewController.m in Sources */,
+				52E00EF11FAF631400F42899 /* DeleteItemConfirmView.m in Sources */,
+				52EB46F71EE03AD600BC9883 /* SubmitProjectViewController.m in Sources */,
+				52AB43B01EE84DBE00E6F4F8 /* BankNotesViewController.m in Sources */,
+				5279D9C51EE15AC700456C85 /* ProjectNotesViewController.m in Sources */,
+				521885881EE6FA4000C1DFD0 /* CarHandrailViewController.m in Sources */,
+				52AB43D01EE84DBE00E6F4F8 /* InteriorCarSlamPostOtherViewController.m in Sources */,
+				5297B95B1EE40CFB00255FE4 /* HallStationSameAsMeasurementsViewController.m in Sources */,
+				521885821EE6FA1600C1DFD0 /* CarPushButtonsViewController.m in Sources */,
+				524C0FC51F1B64B50016D0E5 /* Project+CoreDataProperties.m in Sources */,
+				52AB43B91EE84DBE00E6F4F8 /* HallInstranseTransomMeasurement2sViewController.m in Sources */,
+				52AB43C01EE84DBE00E6F4F8 /* InteriorCarCeilingExhaustFanLocationViewController.m in Sources */,
+				524C0FC91F1B64B50016D0E5 /* HallEntrance+CoreDataProperties.m in Sources */,
+				5274E3891F0643D700B6867B /* DataManager.m in Sources */,
+				52AB43CF1EE84DBE00E6F4F8 /* InteriorCarSingleSideReturnMeasurementsBViewController.m in Sources */,
+				52AB43BA1EE84DBE00E6F4F8 /* HallIntranceDoorOpeningDirectionViewController.m in Sources */,
+				52D7D3C91FAFCB450002DF72 /* EditLanternListViewController.m in Sources */,
+				52AB43C71EE84DBE00E6F4F8 /* InteriorCarFlooringViewController.m in Sources */,
+				521885791EE6F9C400C1DFD0 /* CarTypeViewController.m in Sources */,
+				52450D171F2957B700DBA408 /* Settings.m in Sources */,
+				524C0FC61F1B64B50016D0E5 /* Bank+CoreDataClass.m in Sources */,
+				52AB43D61EE84DBE00E6F4F8 /* InteriorCarTillerCoverViewController.m in Sources */,
+				524C0FC01F1B64B40016D0E5 /* HallStation+CoreDataClass.m in Sources */,
+				5279D9C81EE15AC700456C85 /* ProjectNumberLobbyPanelsViewController.m in Sources */,
+				52D6C4CD1EE3A5F3001C34CB /* FloorDescriptionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		521B6A001ED850460059DCBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				521B6A011ED850460059DCBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		521B6A081ED850460059DCBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				521B6A091ED850460059DCBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		521B6A0C1ED850460059DCBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		521B6A0D1ED850460059DCBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		521B6A0F1ED850460059DCBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MADSurvey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madelevator.MADSurvey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		521B6A101ED850460059DCBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MADSurvey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madelevator.MADSurvey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		521B69EF1ED850450059DCBC /* Build configuration list for PBXProject "MADSurvey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521B6A0C1ED850460059DCBC /* Debug */,
+				521B6A0D1ED850460059DCBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		521B6A0E1ED850460059DCBC /* Build configuration list for PBXNativeTarget "MADSurvey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521B6A0F1ED850460059DCBC /* Debug */,
+				521B6A101ED850460059DCBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		521B6A031ED850460059DCBC /* MADSurvey.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52EBCF751FCB15AD00E2D524 /* MADSurvey 4.xcdatamodel */,
+				5280AB8E1FCB3141004605BA /* MADSurvey 3.xcdatamodel */,
+				5280AB841FCABC88004605BA /* MADSurvey 2.xcdatamodel */,
+				521B6A041ED850460059DCBC /* MADSurvey.xcdatamodel */,
+			);
+			currentVersion = 52EBCF751FCB15AD00E2D524 /* MADSurvey 4.xcdatamodel */;
+			path = MADSurvey.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 521B69EC1ED850450059DCBC /* Project object */;
+}

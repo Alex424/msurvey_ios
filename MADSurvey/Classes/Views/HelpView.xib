@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HelpView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIc-qK-WTs">
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="UEe-FR-Soe" appends="YES" id="7tt-2O-8Q3"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2t7-mr-vMa">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mq1-di-Tco">
+                            <state key="normal" image="ic_dlg_close">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="vF9-YA-abN"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guidelines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLI-5D-1PJ">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="fE3-uY-quu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="bvu-tY-VyY">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="bvu-tY-VyY" secondAttribute="height" multiplier="768:1024" id="eWU-hW-HxR"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="Ubz-b6-GVs"/>
+                            </connections>
+                        </scrollView>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q5L-CW-R6Y">
+                            <subviews>
+                                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avp-ng-xhc">
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touch-icon" translatesAutoresizingMaskIntoConstraints="NO" id="d68-SU-kjX">
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="d68-SU-kjX" secondAttribute="height" multiplier="1691:2423" id="KJb-gB-fCF"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinch to zoom in &amp; out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7m-TI-rkU">
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="d68-SU-kjX" firstAttribute="centerY" secondItem="Q5L-CW-R6Y" secondAttribute="centerY" id="6Ry-fg-N7t"/>
+                                <constraint firstItem="d68-SU-kjX" firstAttribute="centerX" secondItem="Q5L-CW-R6Y" secondAttribute="centerX" id="6gf-CV-tcK"/>
+                                <constraint firstAttribute="trailing" secondItem="avp-ng-xhc" secondAttribute="trailing" id="JVW-uN-bGS"/>
+                                <constraint firstItem="avp-ng-xhc" firstAttribute="leading" secondItem="Q5L-CW-R6Y" secondAttribute="leading" id="Xt1-YH-ih6"/>
+                                <constraint firstItem="d68-SU-kjX" firstAttribute="width" secondItem="Q5L-CW-R6Y" secondAttribute="width" multiplier="1:2" id="czL-Zn-zcX"/>
+                                <constraint firstItem="B7m-TI-rkU" firstAttribute="centerX" secondItem="d68-SU-kjX" secondAttribute="centerX" id="ftM-1k-l3W"/>
+                                <constraint firstItem="B7m-TI-rkU" firstAttribute="top" secondItem="d68-SU-kjX" secondAttribute="bottom" constant="20" id="gn2-5R-nWH"/>
+                                <constraint firstItem="avp-ng-xhc" firstAttribute="top" secondItem="Q5L-CW-R6Y" secondAttribute="top" id="hBP-bP-6Zj"/>
+                                <constraint firstAttribute="bottom" secondItem="avp-ng-xhc" secondAttribute="bottom" id="w65-kv-laZ"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="3cj-7Z-tw4" appends="YES" id="H43-lx-N8s"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="bvu-tY-VyY" secondAttribute="trailing" constant="8" id="7O4-Ei-O54"/>
+                        <constraint firstAttribute="bottom" secondItem="bvu-tY-VyY" secondAttribute="bottom" constant="8" id="J4L-im-Cka"/>
+                        <constraint firstAttribute="trailing" secondItem="mq1-di-Tco" secondAttribute="trailing" id="JTm-AJ-HRu"/>
+                        <constraint firstItem="Q5L-CW-R6Y" firstAttribute="leading" secondItem="2t7-mr-vMa" secondAttribute="leading" id="VgM-G0-GSo"/>
+                        <constraint firstItem="bvu-tY-VyY" firstAttribute="leading" secondItem="2t7-mr-vMa" secondAttribute="leading" constant="8" id="YKg-Yg-zxR"/>
+                        <constraint firstItem="GLI-5D-1PJ" firstAttribute="top" secondItem="2t7-mr-vMa" secondAttribute="top" constant="12" id="b64-Vk-kRt"/>
+                        <constraint firstItem="bvu-tY-VyY" firstAttribute="top" secondItem="GLI-5D-1PJ" secondAttribute="bottom" constant="10" id="eJY-1E-qSN"/>
+                        <constraint firstItem="Q5L-CW-R6Y" firstAttribute="top" secondItem="GLI-5D-1PJ" secondAttribute="bottom" constant="10" id="g0U-f6-QpR"/>
+                        <constraint firstItem="mq1-di-Tco" firstAttribute="top" secondItem="2t7-mr-vMa" secondAttribute="top" id="nvx-9q-txF"/>
+                        <constraint firstAttribute="bottom" secondItem="Q5L-CW-R6Y" secondAttribute="bottom" id="piD-PM-Unt"/>
+                        <constraint firstItem="GLI-5D-1PJ" firstAttribute="centerX" secondItem="2t7-mr-vMa" secondAttribute="centerX" id="vii-fu-I50"/>
+                        <constraint firstAttribute="trailing" secondItem="Q5L-CW-R6Y" secondAttribute="trailing" id="x7F-3m-9Op"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2t7-mr-vMa" secondAttribute="trailing" constant="20" id="3Bm-3L-Kdk"/>
+                <constraint firstItem="qIc-qK-WTs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CSG-pS-UHR"/>
+                <constraint firstItem="2t7-mr-vMa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="My8-pX-uU8"/>
+                <constraint firstAttribute="bottom" secondItem="qIc-qK-WTs" secondAttribute="bottom" id="USR-Cm-BmT"/>
+                <constraint firstItem="qIc-qK-WTs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YJ4-Ss-tqI"/>
+                <constraint firstAttribute="trailing" secondItem="qIc-qK-WTs" secondAttribute="trailing" id="cvt-Mv-1Sr"/>
+                <constraint firstItem="2t7-mr-vMa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xB0-HC-eml"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="formView" destination="2t7-mr-vMa" id="DzJ-lL-SfO"/>
+                <outlet property="guideView" destination="Q5L-CW-R6Y" id="MoI-fU-Tdb"/>
+                <outlet property="helpScrollView" destination="bvu-tY-VyY" id="4w3-bI-vxR"/>
+                <outlet property="tipLabel" destination="B7m-TI-rkU" id="Eel-cQ-xK8"/>
+                <outlet property="titleLabel" destination="GLI-5D-1PJ" id="fwX-WL-ext"/>
+            </connections>
+            <point key="canvasLocation" x="259.5" y="104.5"/>
+        </view>
+        <tapGestureRecognizer id="3cj-7Z-tw4">
+            <connections>
+                <action selector="guideTapped:" destination="iN0-l3-epB" id="Cqk-oR-rLC"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="UEe-FR-Soe">
+            <connections>
+                <action selector="close:" destination="iN0-l3-epB" id="Mi6-Un-NiQ"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ic_dlg_close" width="30" height="30"/>
+        <image name="touch-icon" width="1691" height="2423"/>
+    </resources>
+</document>

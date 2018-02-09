@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Bank" representedClassName="Bank" syncable="YES">
+        <attribute name="bankDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bankNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numOfCar" optional="YES" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numOfElevator" optional="YES" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numOfInteriorCar" optional="YES" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numOfRiser" optional="YES" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="cars" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Car" inverseName="bank" inverseEntity="Car" syncable="YES"/>
+        <relationship name="hallEntrances" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="HallEntrance" inverseName="bank" inverseEntity="HallEntrance" syncable="YES"/>
+        <relationship name="hallStations" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="HallStation" inverseName="bank" inverseEntity="HallStation" syncable="YES"/>
+        <relationship name="interiorCars" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="InteriorCar" inverseName="bank" inverseEntity="InteriorCar" syncable="YES"/>
+        <relationship name="lanterns" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Lantern" inverseName="bank" inverseEntity="Lantern" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" inverseName="bank" inverseEntity="Photo" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="banks" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="Car" representedClassName="Car" syncable="YES">
+        <attribute name="capacityNumberPersons" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="capacityWeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="carDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="carNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coverHeightCDI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coverHeightSPI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coverScrewCenterHeightCDI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coverScrewCenterHeightSPI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coverScrewCenterWidthCDI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coverScrewCenterWidthSPI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coverWidthCDI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coverWidthSPI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="depthCDI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="depthSPI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="doorsCoinciding" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="floorMarkings" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="frontDoorOpeningHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="frontDoorSlideJambWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="frontDoorStrikeJambWidth" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="handRailDistanceFromReturn" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="handRailDistanceFromWall" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="handRailHeightFromFloor" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="installNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isThereCDI" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isThereHandRail" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isThereRearDoor" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isThereSPI" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="jobType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mountCDI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mountSPI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notesCDI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notesSPI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfCops" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberOfOpenings" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberPerCabCDI" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberPerCabSPI" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rearDoorOpeningHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rearDoorSlideJambWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rearDoorStrikeJambWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="spaceAvailableHeightSPI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="spaceAvailableWidthSPI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weightScale" optional="YES" attributeType="String" defaultValueString="KG" syncable="YES"/>
+        <relationship name="bank" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bank" inverseName="cars" inverseEntity="Bank" syncable="YES"/>
+        <relationship name="cdiPhotos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" inverseName="cdiCar" inverseEntity="Photo" syncable="YES"/>
+        <relationship name="cops" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Cop" inverseName="car" inverseEntity="Cop" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" inverseName="car" inverseEntity="Photo" syncable="YES"/>
+        <relationship name="spiPhotos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" inverseName="spiCar" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="Cop" representedClassName="Cop" syncable="YES">
+        <attribute name="carNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="copName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="copNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coverAff" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coverHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coverToOpening" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coverWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="options" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="returnHinging" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="returnPanelHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="returnPanelWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="swingPanelHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="swingPanelWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Car" inverseName="cops" inverseEntity="Car" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" inverseName="cop" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="HallEntrance" representedClassName="HallEntrance" syncable="YES">
+        <attribute name="carNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="direction" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="doorType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="floorDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="floorNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="leftSideA" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="leftSideB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="leftSideC" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="leftSideD" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rightSideA" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rightSideB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rightSideC" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rightSideD" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsA" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsC" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsD" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsE" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsF" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsG" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsH" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsI" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="bank" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bank" inverseName="hallEntrances" inverseEntity="Bank" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" inverseName="hallEntrance" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="HallStation" representedClassName="HallStation" syncable="YES">
+        <attribute name="affValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="floorNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hallStationDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hallStationNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sameAs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="screwCenterHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="screwCenterWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wallFinish" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="bank" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bank" inverseName="hallStations" inverseEntity="Bank" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" inverseName="hallStation" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="InteriorCar" representedClassName="InteriorCar" syncable="YES">
+        <attribute name="birdCage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carCapacity" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="carDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carFloorHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="carFlooring" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carTiller" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="carWeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="escapeHatchLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exhaustFanLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="installNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="interiorCarNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isThereBackDoor" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isThereExhaustFan" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfPeople" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rearWallHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rearWallWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="typeOfCar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeOfCeilingFrame" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weightScale" optional="YES" attributeType="String" defaultValueString="KG" syncable="YES"/>
+        <relationship name="backDoor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InteriorCarDoor" inverseName="interiorCarBack" inverseEntity="InteriorCarDoor" syncable="YES"/>
+        <relationship name="bank" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bank" inverseName="interiorCars" inverseEntity="Bank" syncable="YES"/>
+        <relationship name="frontDoor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InteriorCarDoor" inverseName="interiorCarFront" inverseEntity="InteriorCarDoor" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" inverseName="interiorCar" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="InteriorCarDoor" representedClassName="InteriorCarDoor" syncable="YES">
+        <attribute name="auxCopBottom" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="auxCopHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="auxCopLeft" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="auxCopReturn" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="auxCopRight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="auxCopThroat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="auxCopTop" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="auxCopWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="carDoorOpeningDirection" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="carDoorType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="centerOpening" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="doorOpeningHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="doorOpeningWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="doorStyle" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="frontReturnMeasurementsHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isThereNewCop" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leftSideA" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="leftSideATypeB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="leftSideB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="leftSideBTypeB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="leftSideC" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="leftSideCTypeB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="leftSideD" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="leftSideE" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mainCopBottom" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mainCopHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mainCopLeft" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mainCopReturn" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mainCopRight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mainCopThroat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mainCopTop" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mainCopWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="otherFrontReturnMeasurements" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="otherSlamPost" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="returnSideWallDepth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rightSideA" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rightSideATypeB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rightSideB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rightSideBTypeB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rightSideC" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rightSideCTypeB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rightSideD" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rightSideE" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sideWallAuxWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sideWallMainWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="slamPostMeasurementsA" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="slamPostMeasurementsB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="slamPostMeasurementsC" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="slamPostMeasurementsD" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="slamPostMeasurementsE" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="slamPostMeasurementsF" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="slamPostMeasurementsG" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="slamPostMeasurementsH" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="slamSideWallDepth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="slideWallWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsCenter" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsCenterLeft" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsCenterRight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsLeft" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsRight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomMeasurementsWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomProfileColonnade" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomProfileColonnade2" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomProfileDepth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomProfileHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transomProfileReturn" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="typeOfFrontReturn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeOfSlamPost" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="interiorCarBack" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InteriorCar" inverseName="backDoor" inverseEntity="InteriorCar" syncable="YES"/>
+        <relationship name="interiorCarFront" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InteriorCar" inverseName="frontDoor" inverseEntity="InteriorCar" syncable="YES"/>
+    </entity>
+    <entity name="Lantern" representedClassName="Lantern" syncable="YES">
+        <attribute name="affValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="floorNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lanternDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lanternNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sameAs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="screwCenterHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="screwCenterWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="spaceAvailableHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="spaceAvailableWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wallFinish" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="bank" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bank" inverseName="lanterns" inverseEntity="Bank" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" inverseName="lantern" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="Lobby" representedClassName="Lobby" syncable="YES">
+        <attribute name="lobbyNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="panelHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="panelWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="screwCenterHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="screwCenterWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="specialCommunicationOption" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="specialFeature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visibility" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" inverseName="lobby" inverseEntity="Photo" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="lobbies" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bank" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bank" inverseName="photos" inverseEntity="Bank" syncable="YES"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Car" inverseName="photos" inverseEntity="Car" syncable="YES"/>
+        <relationship name="cdiCar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Car" inverseName="cdiPhotos" inverseEntity="Car" syncable="YES"/>
+        <relationship name="cop" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cop" inverseName="photos" inverseEntity="Cop" syncable="YES"/>
+        <relationship name="hallEntrance" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HallEntrance" inverseName="photos" inverseEntity="HallEntrance" syncable="YES"/>
+        <relationship name="hallStation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HallStation" inverseName="photos" inverseEntity="HallStation" syncable="YES"/>
+        <relationship name="interiorCar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InteriorCar" inverseName="photos" inverseEntity="InteriorCar" syncable="YES"/>
+        <relationship name="lantern" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lantern" inverseName="photos" inverseEntity="Lantern" syncable="YES"/>
+        <relationship name="lobby" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lobby" inverseName="photos" inverseEntity="Lobby" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="photos" inverseEntity="Project" syncable="YES"/>
+        <relationship name="spiCar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Car" inverseName="spiPhotos" inverseEntity="Car" syncable="YES"/>
+    </entity>
+    <entity name="Project" representedClassName="Project" syncable="YES">
+        <attribute name="cabInteriors" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="companyContact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cops" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hallEntrances" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hallLanterns" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hallStations" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 32" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="jobType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lobbyPanels" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="no" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numBanks" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numFloors" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numLobbyPanels" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="scaleUnit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" defaultValueString="Not Submitted" syncable="YES"/>
+        <attribute name="submitTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="banks" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Bank" inverseName="project" inverseEntity="Bank" syncable="YES"/>
+        <relationship name="lobbies" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Lobby" inverseName="project" inverseEntity="Lobby" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photo" inverseName="project" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bank" positionX="-63" positionY="-18" width="128" height="270"/>
+        <element name="Car" positionX="-54" positionY="54" width="128" height="795"/>
+        <element name="Cop" positionX="-36" positionY="153" width="128" height="300"/>
+        <element name="HallEntrance" positionX="-18" positionY="162" width="128" height="435"/>
+        <element name="HallStation" positionX="0" positionY="171" width="128" height="270"/>
+        <element name="InteriorCar" positionX="18" positionY="180" width="128" height="435"/>
+        <element name="InteriorCarDoor" positionX="36" positionY="189" width="128" height="1170"/>
+        <element name="Lantern" positionX="-9" positionY="135" width="128" height="330"/>
+        <element name="Lobby" positionX="0" positionY="144" width="128" height="225"/>
+        <element name="Photo" positionX="9" positionY="153" width="128" height="240"/>
+        <element name="Project" positionX="18" positionY="162" width="128" height="405"/>
+    </elements>
+</model>
